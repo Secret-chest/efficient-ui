@@ -1,0 +1,33 @@
+@import url("THEME.css");
+
+body {
+    font: var(--gui-font);
+}
+
+h1.headline {
+    font: var(--headline-font);
+}
+
+h1 {
+    font: var(--h1-font);
+}
+
+h2 {
+    font: var(--h2-font);
+}
+
+h3 {
+    font: var(--h3-font);
+}
+
+h4 {
+    font: var(--h4-font);
+}
+
+h5 {
+    font: var(--h5-font);
+}
+
+h6 {
+    font: var(--h6-font);
+}

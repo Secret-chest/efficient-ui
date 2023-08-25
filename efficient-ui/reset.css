@@ -1,0 +1,38 @@
+/* Better default box model */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Remove inconsistent default margins, shadows, borders and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: none;
+    text-shadow: none;
+    border: none;
+}
+
+/* Disable subpixel rendering only on billionaire computers(tm) */
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Inherit font styles for form controls */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* Break words to avoid horizontal scrolling */
+p, h1, h2, h3, h4, h5, h6, label, li, dl, dt, dd, figcaption, blockquote {
+    overflow-wrap: break-word;
+}
+
+/* Always fill the viewport */
+html, body {
+    min-height: 100vh;
+}

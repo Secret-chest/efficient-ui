@@ -1,0 +1,21 @@
+@import url("THEME.css");
+
+:any-link {
+    color: var(--color-link-text);
+}
+
+:any-link:visited {
+    color: var(--color-link-visited-text);
+}
+
+:any-link:hover {
+    color: var(--color-link-hover-text);
+}
+
+:any-link:visited:hover {
+    color: var(--color-link-hover-text);
+}
+
+:any-link:active {
+    color: var(--color-link-active-text);
+}
