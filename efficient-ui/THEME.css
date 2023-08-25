@@ -98,50 +98,62 @@
         ;
     
     /* COLOURS */
-    /* background */                      /* foreground */
-    --color-primary: #3F51B5;           --color-primary-text: #ffffff;
-    --color-primary-1: #303F9F;         --color-primary-1-text: #ffffff;
-    --color-primary-2: #1A237E;         --color-primary-2-text: #ffffff;
-    --color-primary-3: #7986CB;         --color-primary-3-text: #000000;
-    --color-primary-4: #C5CAE9;         --color-primary-4-text: #000000;
+    /* background */                                  /* foreground */
+    --color-primary: #3F51B5;                      --color-primary-text: #ffffff;
+    --color-primary-1: #303F9F;                    --color-primary-1-text: #ffffff;
+    --color-primary-2: #1A237E;                    --color-primary-2-text: #ffffff;
+    --color-primary-3: #7986CB;                    --color-primary-3-text: #000000;
+    --color-primary-4: #C5CAE9;                    --color-primary-4-text: #000000;
 
-    --color-accent: #E91E63;            --color-accent-text: #ffffff;
-    --color-accent-1: #C2185B;          --color-accent-1-text: #ffffff;
-    --color-accent-2: #880E4F;          --color-accent-2-text: #ffffff;
-    --color-accent-3: #F06292;          --color-accent-3-text: #000000;
-    --color-accent-4: #F8BBD0;          --color-accent-4-text: #000000;
+    --color-accent: #E91E63;                       --color-accent-text: #ffffff;
+    --color-accent-1: #C2185B;                     --color-accent-1-text: #ffffff;
+    --color-accent-2: #880E4F;                     --color-accent-2-text: #ffffff;
+    --color-accent-3: #F06292;                     --color-accent-3-text: #000000;
+    --color-accent-4: #F8BBD0;                     --color-accent-4-text: #000000;
 
-    --color-background: #f5f5f5;        --color-background-text: #000000df;
-    --color-surface: #ffffff;           --color-surface-text: #000000df;
-    --color-menu: #fafafa;              --color-menu-text: #000000cc;
-                                          --color-caption-text: #000000cc;
-                                          --color-label-text: #000000df;
+    --color-background: #f5f5f5;                   --color-background-text: #000000df;
+    --color-surface: #ffffff;                      --color-surface-text: #000000df;
+    --color-menu: #fafafa;                         --color-menu-text: #000000cc;
+                                                     --color-caption-text: #000000cc;
+                                                     --color-label-text: #000000df;
 
-    --color-error: #d50000;             --color-error-text: #ffffff;
-    --color-alert: #ffab00;             --color-alert-text: #000000;
-    --color-info: #00b8d4;              --color-info-text: #000000;
-    --color-success: #00c853;           --color-success-text: #ffffff;
+    --color-error: #d50000;                        --color-error-text: #ffffff;
+    --color-alert: #ffab00;                        --color-alert-text: #000000;
+    --color-info: #00b8d4;                         --color-info-text: #000000;
+    --color-success: #00c853;                      --color-success-text: #ffffff;
 
-    --color-callout: #546e7a;           --color-callout-text: #ffffff;
-    --color-callout-1: #37474f;         --color-callout-1-text: #ffffff;
-    --color-callout-2: #78909c;         --color-callout-2-text: #ffffff;
+    --color-callout: #546e7a;                      --color-callout-text: #ffffff;
+    --color-callout-1: #37474f;                    --color-callout-1-text: #ffffff;
+    --color-callout-2: #78909c;                    --color-callout-2-text: #ffffff;
 
-    --color-code: #263238;              --color-code-text: #ffffff;
-    --color-quote: #fafafa;             --color-quote-text: #000000cc;
+    --color-code: #263238;                         --color-code-text: #ffffff;
+    --color-quote: #fafafa;                        --color-quote-text: #000000cc;
 
-                                          --color-link-text: #1e88e5;
-                                          --color-link-hover-text: #1565c0;
-                                          --color-link-active-text: #1e88e580;
-                                          --color-link-visited-text: #1e88e5;
-                                          --color-link-visited-hover-text: #1565c0;
+                                                     --color-link-text: #1e88e5;
+                                                     --color-link-hover-text: #1565c0;
+                                                     --color-link-active-text: #1e88e580;
+                                                     --color-link-visited-text: #1e88e5;
+                                                     --color-link-visited-hover-text: #1565c0;
+
+    --color-button: var(--color-primary);            --color-button-text: var(--color-primary-text);
+    --color-button-hover: var(--color-primary);      --color-button-hover-text: var(--color-primary-text);
+    --color-button-active: var(--color-primary);     --color-button-active-text: var(--color-primary-text);
+
+    --color-flat-button: transparent;                --color-flat-button-text: var(--color-primary);
+    --color-flat-button-hover: #00000033;          --color-flat-button-hover-text: var(--color-primary-2);
+    --color-flat-button-active: #00000040;         --color-flat-button-active-text: var(--color-primary-3);
 
     --disabled-opacity: .75;
 
     /* Shadows and borders */
     --shadow-button: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+    --shadow-button-hover: 0 4px 10px -4px rgba(0, 0, 0, 0.12), 0 4px 10px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
     --shadow-flat-button: none;
+    --shadow-flat-button-hover: none;
     --border-button: none;
+    --border-button-hover: none;
     --border-flat-button: none;
+    --border-flat-button-hover: none;
     --radius-button: 2px;
     --redius-flat-button: 2px;
 
@@ -151,6 +163,9 @@
     --padding-button: 4px 8px;
     --gap-button: 4px;
     --min-width-button: 64px;
+
+    /* Animation */
+    --transitions-button: background 0.5s, color 0.5s, box-shadow 0.5s;
 }
 
 h6 {

@@ -1,10 +1,10 @@
 @import url("THEME.css");
 
-.button, button {
+button, .button {
     box-shadow: var(--shadow-button);
     text-decoration: none;
-    background-color: var(--color-primary);
-    color: var(--color-primary-text) !important;
+    background-color: var(--color-button);
+    color: var(--color-button-text) !important;
     cursor: pointer;
     border: var(--border-button);
     min-height: var(--height-button);
@@ -17,6 +17,7 @@
     gap: var(--gap-button);
     border-radius: var(--radius-button);
     font: var(--button-font);
+    transition: var(--transitions-button);
 }
 
 button::selection, .button::selection {
@@ -27,8 +28,21 @@ button::selection, .button::selection {
 .button-flat {
     border: var(--border-flat-button);
     border-radius: var(--radius-flat-button);
-    border-radius: var(--radius-flat-button);
     background-color: transparent;
     color: var(--color-primary) !important;
     box-shadow: var(--shadow-flat-button);
+}
+
+button:hover, .button:hover {
+    border: var(--border-button-hover);
+    box-shadow: var(--shadow-button-hover);
+    background-color: var(--color-button-hover);
+    color: var(--color-button-hover-text);
+}
+
+.button-:hover {
+    border: var(--border-flat-button-hover);
+    box-shadow: var(--shadow-flat-button-hover);
+    background-color: var(--color-flat-button-hover);
+    color: var(--color-flat-button-hover-text);
 }
