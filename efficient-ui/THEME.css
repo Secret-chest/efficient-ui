@@ -140,8 +140,8 @@
     --color-button-active: var(--color-primary);     --color-button-active-text: var(--color-primary-text);
 
     --color-flat-button: transparent;                --color-flat-button-text: var(--color-primary);
-    --color-flat-button-hover: #00000033;          --color-flat-button-hover-text: var(--color-primary-2);
-    --color-flat-button-active: #00000040;         --color-flat-button-active-text: var(--color-primary-3);
+    --color-flat-button-hover: #00000020;          --color-flat-button-hover-text: var(--color-primary-2);
+    --color-flat-button-active: #00000030;         --color-flat-button-active-text: var(--color-primary-3);
 
     --disabled-opacity: .75;
 
