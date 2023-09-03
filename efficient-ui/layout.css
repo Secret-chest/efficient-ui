@@ -1,0 +1,28 @@
+.horizontal-box {
+    display: flex;
+    flex-direction: row;
+}
+
+.horizontal-box.homogenous > * {
+    flex: 1;
+}
+
+.horizontal-box.wrap {
+    flex-wrap: wrap;
+}
+
+.flow-grid {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: repeat(auto-fit, 1fr);
+}
+
+.button-box {
+    display: flex;
+    flex-flow: row wrap;
+    gap: var(--gap-buttonbox);
+}
+
+.button-box button, .button-box .button {
+    margin: 0;
+}

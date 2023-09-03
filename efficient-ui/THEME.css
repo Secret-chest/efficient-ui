@@ -15,7 +15,7 @@
         normal /* variant */
         400 /* weight */
         normal /* stretch */
-        16px/1 /* size / line height */
+        0.9em/1.2 /* size / line height */
         "Roboto Mono", "Noto Sans Mono", "Noto Mono", "Source Code Pro", "Source Code", "source-pro-code", Cousine, Consolas, monospace /* family */
         ;
     --keyboard-font: /* keyboard */
@@ -23,8 +23,8 @@
         normal /* variant */
         600 /* weight */
         normal /* stretch */
-        14px/1 /* size / line height */
-        "Roboto Mono", "Noto Sans Mono", "Noto Mono", "Source Code Pro", "Source Code", "source-pro-code", Cousine, Consolas, monospace /* family */
+        0.8em/1 /* size / line height */
+        "Roboto", "Noto Sans", system-ui, apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Arial", sans-serif /* family */
         ;
     --button-font: /* buttons */
         normal /* style */
@@ -111,10 +111,10 @@
     --color-accent-3: #F06292;                     --color-accent-3-text: #000000;
     --color-accent-4: #F8BBD0;                     --color-accent-4-text: #000000;
 
-    --color-background: #f5f5f5;                   --color-background-text: #000000df;
+    --color-background: #fafafa;                   --color-background-text: #000000df;
     --color-surface: #ffffff;                      --color-surface-text: #000000df;
     --color-menu: #fafafa;                         --color-menu-text: #000000cc;
-                                                     --color-caption-text: #000000cc;
+                                                     --color-caption-text: #000000b9;
                                                      --color-label-text: #000000df;
 
     --color-error: #d50000;                        --color-error-text: #ffffff;
@@ -125,9 +125,12 @@
     --color-callout: #546e7a;                      --color-callout-text: #ffffff;
     --color-callout-1: #37474f;                    --color-callout-1-text: #ffffff;
     --color-callout-2: #78909c;                    --color-callout-2-text: #ffffff;
+                                                     --color-callout-button-text: #F8BBD0;
 
     --color-code: #263238;                         --color-code-text: #ffffff;
     --color-quote: #fafafa;                        --color-quote-text: #000000cc;
+    --color-short-code: #f5f5f5;                   --color-short-code-text: #000000cc;
+    --color-keyboard: #757575;                     --color-keyboard-text: #ffffff;
 
                                                      --color-link-text: #1e88e5;
                                                      --color-link-hover-text: #1565c0;
@@ -145,9 +148,12 @@
 
     --disabled-opacity: .75;
 
+    --color-scheme: light;
+    --color-scheme-code: dark;
+
     /* Shadows and borders */
-    --shadow-button: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
-    --shadow-button-hover: 0 4px 10px -4px rgba(0, 0, 0, 0.12), 0 4px 10px 0 rgba(0, 0, 0, 0.24), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    --shadow-button: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    --shadow-button-hover: 0 7px 25px -10px rgba(0, 0, 0, 0.12), 0 7px 25px 0 rgba(0, 0, 0, 0.24), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
     --shadow-flat-button: none;
     --shadow-flat-button-hover: none;
     --border-button: none;
@@ -156,6 +162,18 @@
     --border-flat-button-hover: none;
     --radius-button: 2px;
     --redius-flat-button: 2px;
+    --radius-code: 0;
+    --radius-short-code: 0.125em;
+    --border-code: none;
+    --border-short-code: none;
+    --radius-card: 0;
+    --border-card: none;
+    --outline-outlined-card: 1px solid #00000080;
+    --radius-outlined-card: 4px;
+    --shadow-small: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
+    --shadow-medium: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    --shadow-large: 0 13px 55px -22px rgba(0, 0, 0, 0.12), 0 13px 55px 0 rgba(0, 0, 0, 0.24), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
+    --shadow-xl: 0 17px 75px -30px rgba(0, 0, 0, 0.12), 0 17px 75px 0 rgba(0, 0, 0, 0.24), 0 1px 18px 0 rgba(0, 0, 0, 0.12);
 
     /* Sizing */
     --margin-button: 8px;
@@ -163,9 +181,28 @@
     --padding-button: 4px 8px;
     --gap-button: 4px;
     --min-width-button: 64px;
+    --padding-card: 0 12px 12px 12px;
+    --padding-card-top: 12px;
+    --padding-code: 12px;
+    --padding-card-figcaption: 0 12px 12px 12px;
+    --margin-card: 8px;
+    --size-keyboard: 1.5em;
+    --figure-max-size-horizontal-card: clamp(200px, 50%, 768px);
+    --gap-toast: 8px;
+    --min-width-toast: 192px;
+    --max-width-toast: 50%;
+    --height-toast: 40px;
+    --padding-toast: 0 0 0 8px;
+    --radius-toast: 2px;
+    --gap-buttonbox: 4px;
 
     /* Animation */
     --transitions-button: background 0.5s, color 0.5s, box-shadow 0.5s;
+
+    /* Positioning */
+    --toast-align-horizontal: end;
+    --toast-align-vertical: end;
+    --margin-toast: 12px;
 }
 
 h6 {
@@ -182,4 +219,20 @@ h6 {
 
 button, .button {
     text-transform: uppercase;
+}
+
+.toast-container li {
+    animation: toastSlide 750ms cubic-bezier(0.16, 1, 0.3, 1) 0s 1 normal forwards;
+}
+
+@keyframes toastSlide {
+	0% {
+		opacity: 0;
+		transform: translateY(100vh);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
 }

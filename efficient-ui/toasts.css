@@ -1,0 +1,39 @@
+.toast-container {
+    font: var(--gui-font);
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: var(--toast-align-vertical);
+    justify-content: var(--toast-align-horizontal);
+    width: 100%;
+    height: 100%;
+    padding: var(--margin-toast);
+    list-style: none;
+}
+
+.toast-container > li {
+    background: var(--color-callout);
+    color: var(--color-callout-text);
+    max-width: var(--max-width-toast);
+    min-width: var(--min-width-toast);
+    min-height: var(--height-toast);
+    padding: var(--padding-toast);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: var(--shadow-medium);
+    border-radius: var(--radius-toast);
+}
+
+.toast-container > li .button-flat {
+    color: var(--color-callout-button-text) !important;
+}
+
+.toast-container > li .button, .toast-container > li button {
+    margin: 0;
+}
+
+.toast-container > li > .button-box {
+    gap: 0;
+}

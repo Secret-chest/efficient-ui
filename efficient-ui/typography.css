@@ -2,6 +2,8 @@
 
 body {
     font: var(--gui-font);
+    background: var(--color-background);
+    color-scheme: var(--color-scheme);
 }
 
 h1.headline {

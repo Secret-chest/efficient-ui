@@ -1,0 +1,47 @@
+.card {
+    box-shadow: var(--shadow-medium);
+    margin: var(--margin-card);
+    border-radius: var(--radius-card);
+    background: var(--color-surface);
+    color: var(--color-surface-text);
+    border: var(--border-card);
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.card > section {
+    padding: var(--padding-card);
+}
+
+.card > figure > figcaption {
+    padding: var(--padding-card-figcaption);
+}
+
+.card:not(:has(figure)) {
+    padding-top: var(--padding-card-top);
+}
+
+figcaption {
+    color: var(--color-caption-text);
+}
+
+.card-outline {
+    box-shadow: none;
+    border: none;
+    border-radius: var(--radius-outlined-card);
+    outline: var(--outline-outlined-card);
+}
+
+.card-horizontal {
+    flex-flow: row nowrap;
+}
+
+.card-horizontal > figure {
+    height: auto;
+    max-width: var(--figure-max-size-horizontal-card);
+}
+
+.card-horizontal > figure + section {
+    padding-top: var(--padding-card-top);
+}

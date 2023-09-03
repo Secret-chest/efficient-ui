@@ -1,0 +1,36 @@
+pre, samp {
+    overflow-x: scroll;
+    background-color: var(--color-code);
+    color: var(--color-code-text);
+    padding: var(--padding-code);
+    color-scheme: var(--color-scheme-code);
+    border-radius: var(--radius-code);
+    border: var(--border-code);
+    display: block;
+}
+
+pre, samp, code, var {
+    font: var(--mono-font);
+}
+
+code, var {
+    background: var(--color-short-code);
+    color: var(--color-short-code-text);
+    border-radius: var(--radius-short-code);
+    border: var(--border-short-code);
+    display: inline;
+}
+
+kbd {
+    font: var(--keyboard-font);
+    box-shadow: var(--shadow-small);
+    background: var(--color-keyboard);
+    color: var(--color-keyboard-text);
+    padding: 0.25em;
+    min-width: var(--size-keyboard);
+    min-height: var(--size-keyboard);
+    display: inline-flex;
+    align-items: baseline;
+    justify-content: center;
+    cursor: default;
+}
