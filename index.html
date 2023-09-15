@@ -138,7 +138,22 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
             <article class="card">
                 <section class="card-main" role="main">
                     <h1>Toasts</h1>
-                    <button>Make toast</button>
+                    <button onclick="makeToast();">Make toast</button>
+                    <script>
+                        function makeToast() {
+                            container = document.querySelector(".toast-container");
+
+                            html = container.innerHTML;
+                            container.innerHTML = html + `
+                                <li>
+                                    This is a toast.
+                                    <div class="button-box">
+                                        <button class="button-flat">Take action</button>
+                                        <button class="button-flat" onclick="removeToast()">Close</button>
+                                    </div>
+                                </li>`;
+                        }
+                    </script>
                 </section>
             </article>
         </main>

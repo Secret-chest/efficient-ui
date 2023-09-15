@@ -14,6 +14,4 @@ function removeToast() {
             break;
         }
     }
-        
-    buttonGrandparent.remove();
 }  
