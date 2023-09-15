@@ -10,6 +10,9 @@
     height: 100%;
     padding: var(--margin-toast);
     list-style: none;
+    flex-flow: var(--toast-stack);
+    gap: var(--gap-toast);
+    pointer-events: none;
 }
 
 .toast-container > li {
@@ -24,6 +27,7 @@
     justify-content: space-between;
     box-shadow: var(--shadow-medium);
     border-radius: var(--radius-toast);
+    pointer-events: all;
 }
 
 .toast-container > li .button-flat {
