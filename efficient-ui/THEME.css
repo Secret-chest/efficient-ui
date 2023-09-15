@@ -146,6 +146,8 @@
     --color-flat-button-hover: #00000020;          --color-flat-button-hover-text: var(--color-primary-2);
     --color-flat-button-active: #00000030;         --color-flat-button-active-text: var(--color-primary-3);
 
+    --color-not-accent: transparent;                 --color-not-accent-text: var(--color-background-text);
+
     --disabled-opacity: .75;
 
     --color-scheme: light;
@@ -160,6 +162,8 @@
     --border-button-hover: none;
     --border-flat-button: none;
     --border-flat-button-hover: none;
+    --border-checkbox: 0.125em solid currentColor;
+    --border-checkbox-checked: none;
     --radius-button: 2px;
     --redius-flat-button: 2px;
     --radius-code: 0;
@@ -167,6 +171,7 @@
     --border-code: none;
     --border-short-code: none;
     --radius-card: 0;
+    --radius-checkbox: 0.125em;
     --border-card: none;
     --outline-outlined-card: 1px solid #00000080;
     --radius-outlined-card: 4px;
@@ -195,6 +200,8 @@
     --padding-toast: 0 0 0 8px;
     --radius-toast: 2px;
     --gap-buttonbox: 4px;
+    --gap-label-checkbox: 4px;
+    --size-checkbox: 1em;
 
     /* Animation */
     --transitions-button: background 0.5s, color 0.5s, box-shadow 0.5s;
@@ -205,6 +212,9 @@
     --toast-stack: column-reverse wrap;
     --gap-toast: 8px;
     --margin-toast: 12px;
+
+    /* Icons */
+    --icon-checkbox: polygon(50% 50%, 100% 100%, 40% 40%);
 }
 
 h6 {
