@@ -23,6 +23,7 @@
     min-width: var(--min-width-toast);
     min-height: var(--height-toast);
     padding: var(--padding-toast);
+    border: var(--border-toast);
     display: flex;
     align-items: center;
     justify-content: space-between;

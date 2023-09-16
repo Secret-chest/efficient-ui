@@ -2,6 +2,8 @@ label {
     font: var(--ui-font);
 }
 
+/* Checkbox */
+
 input[type="checkbox"] {
     width: var(--size-checkbox);
     height: var(--size-checkbox);
@@ -9,8 +11,8 @@ input[type="checkbox"] {
     appearance: none;  /* Remove browser default styles */
     border: var(--border-checkbox);
     border-radius: var(--radius-checkbox);
-    color: var(--color-accent);
-    background: var(--color-not-accent);
+    color: var(--color-checkbox-text);
+    background: var(--color-checkbox);
     box-shadow: inset 0 0 0 0 transparent, var(--shadow-form);
     /* Centre the checkmark */
     display: inline-flex;
@@ -22,7 +24,9 @@ input[type="checkbox"] {
 
 input[type="checkbox"]:checked {
     /* Box shadows are shown when printed */
-    box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-accent), var(--shadow-form-checked);
+    box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-checkbox-active), var(--shadow-form-checked);
+    border: var(--border-checkbox-checked);
+    color: var(--color-checkbox-active-text);
 }
 
 input[type="checkbox"]:checked::after {
@@ -31,13 +35,58 @@ input[type="checkbox"]:checked::after {
     width: var(--size-checkbox);
     height: var(--size-checkbox);
     content: "";
-    background-color: var(--color-accent-text);
+    background-color: var(--color-checkbox-active-text);
     /* Display the checkmark */
     -webkit-mask: url("./icons/checkbox.svg");
     mask: url("./icons/checkbox.svg");
 }
 
 label:has(input[type="checkbox"]) {
+    display: inline-flex;  /* So they are aligned */
+    gap: var(--gap-label-checkbox);
+    align-items: center;
+    cursor: pointer;  /* a11y */
+}
+
+/* Radio */
+
+input[type="radio"] {
+    width: var(--size-checkbox);
+    height: var(--size-checkbox);
+    aspect-ratio: 1/1;
+    appearance: none;  /* Remove browser default styles */
+    border: var(--border-radio);
+    border-radius: var(--radius-radio);
+    color: var(--color-radio-text);
+    background: var(--color-radio);
+    box-shadow: inset 0 0 0 0 transparent, var(--shadow-form);
+    /* Centre the checkmark */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;  /* a11y */
+}
+
+input[type="radio"]:checked {
+    /* Box shadows are shown when printed */
+    box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-radio-active), var(--shadow-form-checked);
+    color: var(--color-radio-active-text);
+}
+
+input[type="radio"]:checked::after {
+    /* Position directly on top of the checkbox */
+    position: absolute;
+    width: var(--size-checkbox);
+    height: var(--size-checkbox);
+    content: "";
+    background-color: var(--color-radio-active-text);
+    /* Display the checkmark */
+    -webkit-mask: url("./icons/radio.svg");
+    mask: url("./icons/radio.svg");
+}
+
+label:has(input[type="radio"]) {
     display: inline-flex;  /* So they are aligned */
     gap: var(--gap-label-checkbox);
     align-items: center;
