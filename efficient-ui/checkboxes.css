@@ -14,19 +14,23 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-    box-shadow: inset var(--size-checkbox) var(--size-checkbox) var(--color-accent);
+    box-shadow: inset var(--size-checkbox) var(--size-checkbox) 0 var(--size-checkbox) var(--color-accent);
 }
 
 input[type="checkbox"]:checked::after {
-    clip-path: var(--icon-checkbox);
-    background-color: var(--color-accent-text);
+    position: absolute;
     width: var(--size-checkbox);
     height: var(--size-checkbox);
-    content: " ";
+    content: "";
+    background-color: var(--color-accent-text);
+    background-size: contain;
+    -webkit-mask: url("./icons/checkbox.svg");
+    mask: url("./icons/checkbox.svg");
 }
 
 label:has(input[type="checkbox"]) {
     display: inline-flex;
     gap: var(--gap-label-checkbox);
     align-items: center;
+    cursor: pointer;
 }
