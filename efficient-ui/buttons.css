@@ -2,7 +2,7 @@
 
 button, .button {
     box-shadow: var(--shadow-button);
-    text-decoration: none;
+    text-decoration: none;  /* In case of links */
     background-color: var(--color-button);
     color: var(--color-button-text) !important;
     cursor: pointer;
@@ -21,6 +21,7 @@ button, .button {
 }
 
 button::selection, .button::selection {
+    /* Can select text in buttons, but selection won't appear to make it less disturbing */
     background: transparent;
     user-select: auto;
 }

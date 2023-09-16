@@ -1,5 +1,5 @@
 pre, samp {
-    overflow-x: scroll;
+    overflow-x: scroll;  /* Make it scrollable instead of breaking the layout */
     background-color: var(--color-code);
     color: var(--color-code-text);
     padding: var(--padding-code);
@@ -26,7 +26,7 @@ kbd {
     box-shadow: var(--shadow-small);
     background: var(--color-keyboard);
     color: var(--color-keyboard-text);
-    padding: 0.25em;
+    padding: var(--padding-keyboard);
     min-width: var(--size-keyboard);
     min-height: var(--size-keyboard);
     display: inline-flex;

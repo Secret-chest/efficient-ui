@@ -1,5 +1,6 @@
 .toast-container {
     font: var(--gui-font);
+    /* Nicely align the toasts */
     display: flex;
     position: fixed;
     top: 0;
@@ -12,7 +13,7 @@
     list-style: none;
     flex-flow: var(--toast-stack);
     gap: var(--gap-toast);
-    pointer-events: none;
+    pointer-events: none;  /* Allow clicking outside toasts normally */
 }
 
 .toast-container > li {
@@ -27,7 +28,7 @@
     justify-content: space-between;
     box-shadow: var(--shadow-medium);
     border-radius: var(--radius-toast);
-    pointer-events: all;
+    pointer-events: all;  /* Make toasts clickable */
 }
 
 .toast-container > li .button-flat {

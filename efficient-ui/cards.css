@@ -5,7 +5,7 @@
     background: var(--color-surface);
     color: var(--color-surface-text);
     border: var(--border-card);
-    overflow: hidden;
+    overflow: hidden;  /* So rounded corners can cut through the content */
     display: flex;
     flex-flow: column nowrap;
 }
@@ -19,7 +19,7 @@
 }
 
 .card:not(:has(figure)) {
-    padding-top: var(--padding-card-top);
+    padding-top: var(--padding-card-top);  /* Figures should be flush with the top */
 }
 
 figcaption {
@@ -43,5 +43,6 @@ figcaption {
 }
 
 .card-horizontal > figure + section {
+    /* Beside figure */
     padding-top: var(--padding-card-top);
 }

@@ -175,6 +175,8 @@
     --border-card: none;
     --outline-outlined-card: 1px solid #00000080;
     --radius-outlined-card: 4px;
+    --shadow-form: 0 0 0 0 transparent;  /* none */
+    --shadow-form-checked: 0 0 0 0 transparent;  /* none */
     --shadow-small: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
     --shadow-medium: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
     --shadow-large: 0 13px 55px -22px rgba(0, 0, 0, 0.12), 0 13px 55px 0 rgba(0, 0, 0, 0.24), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
@@ -192,6 +194,7 @@
     --padding-card-figcaption: 0 12px 12px 12px;
     --margin-card: 8px;
     --size-keyboard: 1.5em;
+    --padding-keyboard: 0.375em;
     --figure-max-size-horizontal-card: clamp(200px, 50%, 768px);
     --gap-toast: 8px;
     --min-width-toast: 192px;
@@ -214,12 +217,16 @@
     --margin-toast: 12px;
 }
 
+/* Extra styles */
+
 h6 {
+    /* Make it look nicer */
     text-transform: uppercase;
     color: var(--color-accent);
 }
 
 :any-link {
+    /* Make them nicer, not possible with the font property */
     font-weight: bolder;
     text-decoration: underline;
     text-decoration-thickness: .05em;
@@ -227,19 +234,23 @@ h6 {
 }
 
 button, .button {
+    /* Make it look nicer */
     text-transform: uppercase;
 }
 
 .toast-container li {
+    /* Toast appear */
     animation: toastSlide 750ms cubic-bezier(0.16, 1, 0.3, 1);
     transform-origin: bottom;
 }
 
 .toast-container li.removing {
+    /* Toast disappear */
     animation: toastCompress 500ms cubic-bezier(0.55, 0, 1, 0.45);
 }
 
 .toast-container li.removing ~ li {
+    /* TODO */
 }
 
 @keyframes toastSlide {
@@ -267,10 +278,12 @@ button, .button {
 }
 
 input[type="checkbox"]:checked::after {
+    /* Checked */
     animation: check 250ms cubic-bezier(0.61, 1, 0.88, 1);
 }
 
 input[type="checkbox"] {
+    /* Transition background */
     transition: box-shadow 250ms cubic-bezier(0.61, 1, 0.88, 1);
 }
 

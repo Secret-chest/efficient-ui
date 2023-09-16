@@ -1,36 +1,45 @@
+label {
+    font: var(--ui-font);
+}
+
 input[type="checkbox"] {
     width: var(--size-checkbox);
     height: var(--size-checkbox);
     aspect-ratio: 1/1;
-    appearance: none;
+    appearance: none;  /* Remove browser default styles */
     border: var(--border-checkbox);
     border-radius: var(--radius-checkbox);
     color: var(--color-accent);
+    background: var(--color-not-accent);
+    box-shadow: inset 0 0 0 0 transparent, var(--shadow-form);
+    /* Centre the checkmark */
     display: inline-flex;
-    cursor: pointer;
-    position: relative;
     align-items: center;
     justify-content: center;
+    position: relative;
+    cursor: pointer;  /* a11y */
 }
 
 input[type="checkbox"]:checked {
-    box-shadow: inset var(--size-checkbox) var(--size-checkbox) 0 var(--size-checkbox) var(--color-accent);
+    /* Box shadows are shown when printed */
+    box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-accent), var(--shadow-form-checked);
 }
 
 input[type="checkbox"]:checked::after {
+    /* Position directly on top of the checkbox */
     position: absolute;
     width: var(--size-checkbox);
     height: var(--size-checkbox);
     content: "";
     background-color: var(--color-accent-text);
-    background-size: contain;
+    /* Display the checkmark */
     -webkit-mask: url("./icons/checkbox.svg");
     mask: url("./icons/checkbox.svg");
 }
 
 label:has(input[type="checkbox"]) {
-    display: inline-flex;
+    display: inline-flex;  /* So they are aligned */
     gap: var(--gap-label-checkbox);
     align-items: center;
-    cursor: pointer;
+    cursor: pointer;  /* a11y */
 }
