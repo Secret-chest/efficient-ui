@@ -29,6 +29,25 @@ input[type="checkbox"]:checked {
     color: var(--color-checkbox-active-text);
 }
 
+input[type="checkbox"]:indeterminate {
+    /* Box shadows are shown when printed */
+    box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-checkbox-indeterminate), var(--shadow-form-indeterminate);
+    border: var(--border-checkbox-indeterminate);
+    color: var(--color-checkbox-indeterminate-text);
+}
+
+input[type="checkbox"]:indeterminate::after {
+    /* Position directly on top of the checkbox */
+    position: absolute;
+    width: var(--size-checkbox);
+    height: var(--size-checkbox);
+    content: "";
+    background-color: var(--color-checkbox-indeterminate-text);
+    /* Display the checkmark */
+    -webkit-mask: url("./icons/checkbox-indeterminate.svg");
+    mask: url("./icons/checkbox-indeterminate.svg");
+}
+
 input[type="checkbox"]:checked::after {
     /* Position directly on top of the checkbox */
     position: absolute;

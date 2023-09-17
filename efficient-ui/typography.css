@@ -1,5 +1,3 @@
-@import url("THEME.css");
-
 body {
     font: var(--gui-font);
     background: var(--color-background);

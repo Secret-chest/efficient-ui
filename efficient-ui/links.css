@@ -1,5 +1,3 @@
-@import url("THEME.css");
-
 :any-link {
     color: var(--color-link-text);
 }

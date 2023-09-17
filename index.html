@@ -165,7 +165,10 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                                 <h2>Checkbox</h2>
                                 <input type="checkbox">
                                 <input type="checkbox" checked>
-                                <input type="checkbox">
+                                <input type="checkbox" id="indeterminate-checkbox">
+                                <script>
+                                    document.getElementById("indeterminate-checkbox").indeterminate = true;
+                                </script>
                                 <br>
                                 <label><input type="checkbox"> With label</label>
                             </section>
@@ -178,6 +181,12 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                                 <input type="radio" name="radio-samples">
                                 <br>
                                 <label><input type="radio"> With label</label>
+                            </section>
+                        </article>
+                        <article class="card">
+                            <section class="card-main">
+                                <h2>Range slider</h2>
+                                <label><input type="range" min="0" max="100"> With label</label>
                             </section>
                         </article>
                     </div>

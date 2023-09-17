@@ -1,5 +1,3 @@
-@import url("THEME.css");
-
 button, .button {
     box-shadow: var(--shadow-button);
     text-decoration: none;  /* In case of links */

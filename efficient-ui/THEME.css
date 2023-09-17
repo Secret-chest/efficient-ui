@@ -149,6 +149,7 @@
     --color-not-accent: transparent;                 --color-not-accent-text: var(--color-background-text);
     --color-checkbox: var(--color-not-accent);       --color-checkbox-text: var(--color-accent);
     --color-checkbox-active: var(--color-accent);    --color-checkbox-active-text: var(--color-accent-text);
+    --color-checkbox-indeterminate: var(--color-accent);--color-checkbox-indeterminate-text: var(--color-accent-text);
     --color-radio: var(--color-not-accent);          --color-radio-text: var(--color-accent);
     --color-radio-active: var(--color-not-accent);   --color-radio-active-text: var(--color-accent);
 
@@ -168,6 +169,7 @@
     --border-flat-button-hover: none;
     --border-checkbox: 0.125em solid currentColor;
     --border-checkbox-checked: 0.125em solid var(--color-checkbox-active);
+    --border-checkbox-indeterminate: 0.125em solid var(--color-checkbox-active);
     --border-radio: 0.125em solid currentColor;
     --border-radio-checked: 0.125em solid currentColor;
     --radius-button: 2px;
@@ -186,6 +188,7 @@
     --radius-outlined-card: 4px;
     --shadow-form: 0 0 0 0 transparent;  /* none */
     --shadow-form-checked: 0 0 0 0 transparent;  /* none */
+    --shadow-form-indeterminate: 0 0 0 0 transparent;  /* none */
     --shadow-small: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
     --shadow-medium: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
     --shadow-large: 0 13px 55px -22px rgba(0, 0, 0, 0.12), 0 13px 55px 0 rgba(0, 0, 0, 0.24), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
@@ -285,7 +288,7 @@ button, .button {
 	}
 }
 
-input[type="checkbox"]:checked::after, input[type="radio"]:checked::after {
+input[type="checkbox"]:checked::after, input[type="checkbox"]:indeterminate::after, input[type="radio"]:checked::after {
     /* Checked */
     animation: check 250ms cubic-bezier(0.61, 1, 0.88, 1);
 }
