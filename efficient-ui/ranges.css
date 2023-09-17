@@ -3,3 +3,14 @@ input[type="range"] {
     background: transparent;
     cursor: pointer;
 }
+
+label:has(input[type="range"]) {
+    display: inline-flex;  /* So they are aligned */
+    gap: var(--gap-label-checkbox);
+    align-items: center;
+    cursor: default;  /* a11y */
+}
+
+input[type="range"]::-webkit-slider-runnable-track, input[type="range"]::-moz-range-track {
+    background: var();
+}

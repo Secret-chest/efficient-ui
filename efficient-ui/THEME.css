@@ -147,11 +147,17 @@
     --color-flat-button-active: #00000030;         --color-flat-button-active-text: var(--color-primary-3);
 
     --color-not-accent: transparent;                 --color-not-accent-text: var(--color-background-text);
+    
     --color-checkbox: var(--color-not-accent);       --color-checkbox-text: var(--color-accent);
+    --color-checkbox-hover: var(--color-not-accent); --color-checkbox-hover-text: var(--color-accent);
     --color-checkbox-active: var(--color-accent);    --color-checkbox-active-text: var(--color-accent-text);
     --color-checkbox-indeterminate: var(--color-accent);--color-checkbox-indeterminate-text: var(--color-accent-text);
+    --color-checkbox-indeterminate-hover: var(--color-accent);--color-checkbox-indeterminate-hover-text: var(--color-accent-text);
+    --color-checkbox-active-hover: var(--color-accent);--color-checkbox-active-hover-text: var(--color-accent-text);
     --color-radio: var(--color-not-accent);          --color-radio-text: var(--color-accent);
     --color-radio-active: var(--color-not-accent);   --color-radio-active-text: var(--color-accent);
+    --color-radio-hover: var(--color-not-accent);    --color-radio-hover-text: var(--color-accent);
+    --color-radio-active-hover: var(--color-not-accent);--color-radio-active-hover-text: var(--color-accent);
 
     --disabled-opacity: .75;
 
@@ -169,9 +175,14 @@
     --border-flat-button-hover: none;
     --border-checkbox: 0.125em solid currentColor;
     --border-checkbox-checked: 0.125em solid var(--color-checkbox-active);
-    --border-checkbox-indeterminate: 0.125em solid var(--color-checkbox-active);
+    --border-checkbox-indeterminate: 0.125em solid var(--color-checkbox-indeterminate);
+    --border-checkbox-hover: 0.125em solid currentColor;
+    --border-checkbox-checked-hover: 0.125em solid var(--color-checkbox-active);
+    --border-checkbox-indeterminate-hover: 0.125em solid var(--color-checkbox-indeterminate);
     --border-radio: 0.125em solid currentColor;
     --border-radio-checked: 0.125em solid currentColor;
+    --border-radio-hover: 0.125em solid currentColor;
+    --border-radio-checked-hover: 0.125em solid currentColor;
     --radius-button: 2px;
     --redius-flat-button: 2px;
     --radius-code: 0;
@@ -189,6 +200,9 @@
     --shadow-form: 0 0 0 0 transparent;  /* none */
     --shadow-form-checked: 0 0 0 0 transparent;  /* none */
     --shadow-form-indeterminate: 0 0 0 0 transparent;  /* none */
+    --shadow-form-hover: 0 0 0 0 transparent;  /* none */
+    --shadow-form-checked-hover: 0 0 0 0 transparent;  /* none */
+    --shadow-form-indeterminate-hover: 0 0 0 0 transparent;  /* none */
     --shadow-small: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
     --shadow-medium: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
     --shadow-large: 0 13px 55px -22px rgba(0, 0, 0, 0.12), 0 13px 55px 0 rgba(0, 0, 0, 0.24), 0 1px 14px 0 rgba(0, 0, 0, 0.12);
