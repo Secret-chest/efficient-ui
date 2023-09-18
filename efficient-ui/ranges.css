@@ -1,7 +1,7 @@
 input[type="range"] {
     appearance: none;
-    background: transparent;
-    cursor: pointer;
+    cursor: pointer;  /* a11y */
+    height: var(--height-range);
 }
 
 label:has(input[type="range"]) {
@@ -11,6 +11,68 @@ label:has(input[type="range"]) {
     cursor: default;  /* a11y */
 }
 
-input[type="range"]::-webkit-slider-runnable-track, input[type="range"]::-moz-range-track {
-    background: var();
+::-webkit-slider-runnable-track {
+    background: var(--color-range);
+    height: var(--height-range);
+    box-shadow: var(--shadow-range);
+    border: var(--border-range);
+    border-radius: var(--radius-range);
+    outline: none;
+}
+
+::-webkit-slider-runnable-track:hover {
+    background: var(--color-range-hover);
+    box-shadow: var(--shadow-range-hover);
+    border: var(--border-range-hover);
+}
+
+::-webkit-slider-thumb {
+    appearance: none;
+    background: var(--color-range-text);
+    height: var(--height-range-thumb);
+    width: var(--width-range-thumb);
+    box-shadow: var(--shadow-range-thumb);
+    border: var(--border-range-thumb);
+    border-radius: var(--radius-range-thumb);
+    transform: translateY(var(--position-range-thumb));
+}
+
+::-webkit-slider-thumb:hover {
+    background: var(--color-range-hover-text);
+    box-shadow: var(--shadow-range-thumb-hover);
+    border: var(--border-range-thumb-hover);
+    transform: translateY(var(--position-range-thumb-hover));
+}
+
+::-moz-range-track {
+    background: var(--color-range);
+    height: var(--height-range);
+    box-shadow: var(--shadow-range);
+    border: var(--border-range);
+    border-radius: var(--radius-range);
+    outline: none;
+}
+
+::-moz-range-track:hover {
+    background: var(--color-range-hover);
+    box-shadow: var(--shadow-range-hover);
+    border: var(--border-range-hover);
+}
+
+::-moz-range-thumb {
+    appearance: none;
+    background: var(--color-range-text);
+    height: var(--height-range-thumb);
+    width: var(--width-range-thumb);
+    box-shadow: var(--shadow-range-thumb);
+    border: var(--border-range-thumb);
+    border-radius: var(--radius-range-thumb);
+    transform: translateY(var(--position-range-thumb));
+}
+
+::-moz-range-thumb:hover {
+    background: var(--color-range-hover-text);
+    box-shadow: var(--shadow-range-thumb-hover);
+    border: var(--border-range-thumb-hover);
+    transform: translateY(var(--position-range-thumb-hover));
 }

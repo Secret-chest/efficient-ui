@@ -158,6 +158,9 @@
     --color-radio-active: var(--color-not-accent);   --color-radio-active-text: var(--color-accent);
     --color-radio-hover: var(--color-not-accent);    --color-radio-hover-text: var(--color-accent);
     --color-radio-active-hover: var(--color-not-accent);--color-radio-active-hover-text: var(--color-accent);
+    
+    --color-range: var(--color-accent-4);            --color-range-text: var(--color-accent);
+    --color-range-hover: var(--color-accent-4);      --color-range-hover-text: var(--color-accent);    
 
     --disabled-opacity: .75;
 
@@ -195,9 +198,24 @@
     --border-toast: none;
     --radius-toast: 2px;
     --border-card: none;
+    --border-range: none;
+    --border-range-hover: none;
+    --radius-range: 1em;
+    --height-range: 0.75em;
+    --border-range-thumb: none;
+    --border-range-thumb-hover: none;
+    --position-range-thumb: -25%;
+    --position-range-thumb-hover: -25%;
+    --radius-range-thumb: 1em;
+    --width-range-thumb: 1em;
+    --height-range-thumb: 1em;
     --outline-outlined-card: 1px solid #00000080;
     --radius-outlined-card: 4px;
     --shadow-form: 0 0 0 0 transparent;  /* none */
+    --shadow-range: 0 0 0 0 transparent;  /* none */
+    --shadow-range-thumb: 0 0 2px 0 rgba(0, 0, 0, 0.28), 0 0 3px 0 rgba(0, 0, 0, 0.40);
+    --shadow-range-hover: 0 0 0 0 transparent;  /* none */
+    --shadow-range-thumb-hover: 0 0 2px 0 rgba(0, 0, 0, 0.28), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 0 4px 0 rgba(0, 0, 0, 0.40);
     --shadow-form-checked: 0 0 0 0 transparent;  /* none */
     --shadow-form-indeterminate: 0 0 0 0 transparent;  /* none */
     --shadow-form-hover: 0 0 0 0 transparent;  /* none */
@@ -230,6 +248,10 @@
     --gap-buttonbox: 4px;
     --gap-label-checkbox: 4px;
     --size-checkbox: 1em;
+    --height-range: 0.5em;
+    --height-range-hover: 0.5em;
+    --size-range-thumb: 1em;
+    --size-range-thumb-hover: 1em;
 
     /* Animation */
     --transitions-button: background 0.5s, color 0.5s, box-shadow 0.5s;
@@ -310,6 +332,14 @@ input[type="checkbox"]:checked::after, input[type="checkbox"]:indeterminate::aft
 input[type="checkbox"], input[type="radio"] {
     /* Transition background */
     transition: box-shadow 250ms cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    transition: box-shadow 375ms cubic-bezier(0.61, 1, 0.88, 1);
+}
+
+input[type="range"]::-moz-range-thumb {
+    transition: box-shadow 375ms cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 @keyframes check {

@@ -31,3 +31,7 @@ h5 {
 h6 {
     font: var(--h6-font);
 }
+
+p, section {
+    font: var(--body-font);
+}
