@@ -1,4 +1,4 @@
-button, .button {
+button, .button, input[type=button], input[type=submit] {
     box-shadow: var(--shadow-button);
     text-decoration: none;  /* In case of links */
     background-color: var(--color-button);
@@ -18,13 +18,13 @@ button, .button {
     transition: var(--transitions-button);
 }
 
-button::selection, .button::selection {
+:is(button, .button, input[type=button], input[type=submit])::selection {
     /* Can select text in buttons, but selection won't appear to make it less disturbing */
     background: transparent;
     user-select: auto;
 }
 
-.button-flat {
+:is(button, .button, input[type=button], input[type=submit]).button-flat {
     border: var(--border-flat-button);
     border-radius: var(--radius-flat-button);
     background-color: transparent;
@@ -32,14 +32,14 @@ button::selection, .button::selection {
     box-shadow: var(--shadow-flat-button);
 }
 
-button:hover, .button:hover {
+:is(button, .button, input[type=button], input[type=submit]):hover {
     border: var(--border-button-hover);
     box-shadow: var(--shadow-button-hover);
     background-color: var(--color-button-hover);
     color: var(--color-button-hover-text);
 }
 
-.button-flat:hover {
+:is(button, .button, input[type=button], input[type=submit]).button-flat:hover {
     border: var(--border-flat-button-hover);
     box-shadow: var(--shadow-flat-button-hover);
     background-color: var(--color-flat-button-hover);

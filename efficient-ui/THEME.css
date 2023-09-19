@@ -242,11 +242,13 @@
     --height-range: 0.75em;
     --border-range-thumb: none;
     --border-range-thumb-hover: none;
-    --position-range-thumb: -25%;
-    --position-range-thumb-hover: -25%;
+    --position-range-thumb: -12.5%;
+    --position-range-thumb-hover: -12.5%;
     --radius-range-thumb: 1em;
     --width-range-thumb: 1em;
     --height-range-thumb: 1em;
+    --width-range-thumb-hover: 1em;
+    --height-range-thumb-hover: 1em;
     --shadow-range: 0 0 0 0 transparent;  /* none */
     --shadow-range-thumb: 0 0 2px 0 rgba(0, 0, 0, 0.28), 0 0 3px 0 rgba(0, 0, 0, 0.40);
     --shadow-range-hover: 0 0 0 0 transparent;  /* none */
@@ -288,7 +290,7 @@ h6 {
     text-underline-offset: .1em;
 }
 
-button, .button {
+button, .button, input[type=button], input[type=submit] {
     /* Make it look nicer */
     text-transform: uppercase;
 }
@@ -347,11 +349,11 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 input[type="range"]::-moz-range-thumb {
-    transition: box-shadow 375ms cubic-bezier(0.5, 1, 0.89, 1);
+    transition: box-shadow 375ms cubic-bezier(0.61, 1, 0.88, 1);
 }
 
-button {
-    transition: box-shadow 375ms cubic-bezier(0.5, 1, 0.89, 1);
+button, .button, input[type=button], input[type=submit] {
+    transition: box-shadow 375ms cubic-bezier(0.5, 1, 0.89, 1), background 375ms cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 @keyframes check {
