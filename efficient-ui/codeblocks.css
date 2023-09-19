@@ -23,7 +23,7 @@ code, var {
 
 kbd {
     font: var(--keyboard-font);
-    box-shadow: var(--shadow-small);
+    box-shadow: var(--shadow-keyboard);
     background: var(--color-keyboard);
     color: var(--color-keyboard-text);
     padding: var(--padding-keyboard);

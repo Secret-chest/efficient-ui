@@ -1,9 +1,9 @@
 .card {
-    box-shadow: var(--shadow-medium);
+    box-shadow: var(--shadow-card);
     margin: var(--margin-card);
     border-radius: var(--radius-card);
-    background: var(--color-surface);
-    color: var(--color-surface-text);
+    background: var(--color-card);
+    color: var(--color-card-text);
     border: var(--border-card);
     overflow: hidden;  /* So rounded corners can cut through the content */
     display: flex;

@@ -1,6 +1,6 @@
 /* Checkbox */
 
-input[type="checkbox"] {
+input[type="checkbox"]:not(.switch) {
     width: var(--size-checkbox);
     height: var(--size-checkbox);
     aspect-ratio: 1/1;
@@ -18,44 +18,44 @@ input[type="checkbox"] {
     cursor: pointer;  /* a11y */
 }
 
-input[type="checkbox"]:hover {
+input[type="checkbox"]:not(.switch):hover {
     box-shadow: inset 0 0 0 0 transparent, var(--shadow-form-hover);
     border: var(--border-checkbox-hover);
     background: var(--color-checkbox-hover);
     color: var(--color-checkbox-hover-text);
 }
 
-input[type="checkbox"]:checked {
+input[type="checkbox"]:not(.switch):checked {
     /* Box shadows are shown when printed */
     box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-checkbox-active), var(--shadow-form-checked);
     border: var(--border-checkbox-checked);
     color: var(--color-checkbox-active-text);
 }
 
-input[type="checkbox"]:checked:hover {
+input[type="checkbox"]:not(.switch):checked:hover {
     box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-checkbox-active-hover), var(--shadow-form-checked-hover);
     border: var(--border-checkbox-checked-hover);
     color: var(--color-checkbox-active-hover-text);
 }
 
-input[type="checkbox"]:indeterminate {
+input[type="checkbox"]:not(.switch):indeterminate {
     /* Box shadows are shown when printed */
     box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-checkbox-indeterminate), var(--shadow-form-indeterminate);
     border: var(--border-checkbox-indeterminate);
     color: var(--color-checkbox-indeterminate-text);
 }
 
-input[type="checkbox"]:indeterminate:hover {
+input[type="checkbox"]:not(.switch):indeterminate:hover {
     box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-checkbox-indeterminate-hover), var(--shadow-form-indeterminate-hover);
     border: var(--border-checkbox-indeterminate-hover);
     color: var(--color-checkbox-active-hover-text);
 }
 
-input[type="checkbox"]:indeterminate:hover::after {
+input[type="checkbox"]:not(.switch):indeterminate:hover::after {
     background-color: var(--color-checkbox-indeterminate-hover-text);
 }
 
-input[type="checkbox"]:indeterminate::after {
+input[type="checkbox"]:not(.switch):indeterminate::after {
     /* Position directly on top of the checkbox */
     position: absolute;
     width: var(--size-checkbox);
@@ -67,7 +67,7 @@ input[type="checkbox"]:indeterminate::after {
     mask: url("./icons/checkbox-indeterminate.svg");
 }
 
-input[type="checkbox"]:checked::after {
+input[type="checkbox"]:not(.switch):checked::after {
     /* Position directly on top of the checkbox */
     position: absolute;
     width: var(--size-checkbox);
@@ -79,11 +79,11 @@ input[type="checkbox"]:checked::after {
     mask: url("./icons/checkbox.svg");
 }
 
-input[type="checkbox"]:checked:hover::after {
+input[type="checkbox"]:not(.switch):checked:hover::after {
     background-color: var(--color-checkbox-active-hover-text);
 }
 
-label:has(input[type="checkbox"]) {
+label:has(input[type="checkbox"]:not(.switch)) {
     display: inline-flex;  /* So they are aligned */
     gap: var(--gap-label-checkbox);
     align-items: center;
@@ -147,6 +147,98 @@ input[type="radio"]:checked::after {
 }
 
 label:has(input[type="radio"]) {
+    display: inline-flex;  /* So they are aligned */
+    gap: var(--gap-label-checkbox);
+    align-items: center;
+    cursor: pointer;  /* a11y */
+}
+
+/* Checkbox */
+
+input[type="checkbox"].switch {
+    width: var(--size-checkbox);
+    height: var(--size-checkbox);
+    aspect-ratio: 1/1;
+    appearance: none;  /* Remove browser default styles */
+    border: var(--border-checkbox);
+    border-radius: var(--radius-checkbox);
+    color: var(--color-checkbox-text);
+    background: var(--color-checkbox);
+    box-shadow: inset 0 0 0 0 transparent, var(--shadow-form);
+    /* Centre the checkmark */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;  /* a11y */
+}
+
+input[type="checkbox"].switch:hover {
+    box-shadow: inset 0 0 0 0 transparent, var(--shadow-form-hover);
+    border: var(--border-checkbox-hover);
+    background: var(--color-checkbox-hover);
+    color: var(--color-checkbox-hover-text);
+}
+
+input[type="checkbox"].switch:checked {
+    /* Box shadows are shown when printed */
+    box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-checkbox-active), var(--shadow-form-checked);
+    border: var(--border-checkbox-checked);
+    color: var(--color-checkbox-active-text);
+}
+
+input[type="checkbox"].switch:checked:hover {
+    box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-checkbox-active-hover), var(--shadow-form-checked-hover);
+    border: var(--border-checkbox-checked-hover);
+    color: var(--color-checkbox-active-hover-text);
+}
+
+input[type="checkbox"].switch:indeterminate {
+    /* Box shadows are shown when printed */
+    box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-checkbox-indeterminate), var(--shadow-form-indeterminate);
+    border: var(--border-checkbox-indeterminate);
+    color: var(--color-checkbox-indeterminate-text);
+}
+
+input[type="checkbox"].switch:indeterminate:hover {
+    box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-checkbox-indeterminate-hover), var(--shadow-form-indeterminate-hover);
+    border: var(--border-checkbox-indeterminate-hover);
+    color: var(--color-checkbox-active-hover-text);
+}
+
+input[type="checkbox"].switch:indeterminate:hover::after {
+    background-color: var(--color-checkbox-indeterminate-hover-text);
+}
+
+input[type="checkbox"].switch:indeterminate::after {
+    /* Position directly on top of the checkbox */
+    position: absolute;
+    width: var(--size-checkbox);
+    height: var(--size-checkbox);
+    content: "";
+    background-color: var(--color-checkbox-indeterminate-text);
+    /* Display the checkmark */
+    -webkit-mask: url("./icons/checkbox-indeterminate.svg");
+    mask: url("./icons/checkbox-indeterminate.svg");
+}
+
+input[type="checkbox"].switch:checked::after {
+    /* Position directly on top of the checkbox */
+    position: absolute;
+    width: var(--size-checkbox);
+    height: var(--size-checkbox);
+    content: "";
+    background-color: var(--color-checkbox-active-text);
+    /* Display the checkmark */
+    -webkit-mask: url("./icons/checkbox.svg");
+    mask: url("./icons/checkbox.svg");
+}
+
+input[type="checkbox"].switch:checked:hover::after {
+    background-color: var(--color-checkbox-active-hover-text);
+}
+
+label:has(input[type="checkbox"].switch) {
     display: inline-flex;  /* So they are aligned */
     gap: var(--gap-label-checkbox);
     align-items: center;
