@@ -311,6 +311,7 @@
     /* LAYOUT */
     --gap-buttonbox: 4px;
     --gap-label-checkbox: 4px;
+    --gap-box: 16px;
 }
 
 /* Extra styles */

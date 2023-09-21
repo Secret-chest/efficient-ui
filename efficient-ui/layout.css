@@ -1,28 +1,40 @@
-.horizontal-box {
+x-hbox {
     display: flex;
     flex-direction: row;
+    gap: var(--gap-box);
 }
 
-.horizontal-box.homogenous > * {
+x-vbox {
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-box);
+}
+
+x-hbox.homogenous > *, x-hbox.homogenous > * {
     flex: 1;
 }
 
-.horizontal-box.wrap {
+x-hbox.wrap, x-vbox.wrap {
     flex-wrap: wrap;
 }
 
-.flow-grid {
+x-rows {
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: repeat(auto-fit, 1fr);
+    gap: var(--gap-box);
 }
 
-.button-box {
+x-buttonbox {
     display: flex;
     flex-flow: row wrap;
     gap: var(--gap-buttonbox);
 }
 
-.button-box button, .button-box .button {
+x-buttonbox :is(button, .button, input[type="button"], input[type="submit"]) {
     margin: 0;
+}
+
+:is(x-hbox, x-vbox, x-buttonbox, x-rows, x-cold).nopad {
+    gap: 0;
 }
