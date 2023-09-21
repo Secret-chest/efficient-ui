@@ -2,6 +2,7 @@ body {
     font: var(--gui-font);
     background: var(--color-background);
     color-scheme: var(--color-scheme);
+    color: var(--color-background-text);
 }
 
 h1.headline {
@@ -34,4 +35,8 @@ h6 {
 
 p, section {
     font: var(--body-font);
+}
+
+label {
+    color: var(--color-label-text);
 }
