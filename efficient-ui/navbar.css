@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-navbar);
+    height: var(--height-navbar);
+    box-shadow: var(--shadow-navbar);
+    border: var(--shadow-navbar);
+    padding: var(--padding-navbar);
+    border-radius: var(--radius-navbar);
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: var(--gap-navbar);
+}
+
+.navbar {
+    width: 100%;
+}
+
+.navbar :is(:any-link, a:hover:visited) {
+    color: var(--color-navbar-text);
+    text-decoration: none;
+}

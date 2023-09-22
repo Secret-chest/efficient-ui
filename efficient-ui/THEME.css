@@ -312,6 +312,16 @@
     --gap-buttonbox: 4px;
     --gap-label-checkbox: 4px;
     --gap-box: 16px;
+
+    /* NAVBAR */
+    --color-navbar: var(--color-primary);             --color-navbar-text: var(--color-primary-text);
+    
+    --height-navbar: 56px;
+    --padding-navbar: 16px;
+    --gap-navbar: 8px;
+    --shadow-navbar: 0 7px 25px -10px rgba(0, 0, 0, 0.12), 0 7px 25px 0 rgba(0, 0, 0, 0.24), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    --border-navbar: none;
+    --radius-navbar: 0;
 }
 
 /* Extra styles */
@@ -409,4 +419,8 @@ button, .button, input[type=button], input[type=submit] {
 	100% {
 		transform: scale(1);
 	}
+}
+
+.navbar {
+    position: sticky;
 }
