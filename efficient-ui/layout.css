@@ -39,25 +39,15 @@ x-buttonbox :is(button, .button, input[type="button"], input[type="submit"]) {
     gap: 0;
 }
 
-body, main, header, footer {
-    display: flex;
-    flex-flow: column nowrap;
-    justify-content: flex-start;
+x-frame, x-hbox, x-vbox, x-rows {
+    display: inline-block;
 }
 
 x-frame {
     max-width: var(--width, 100%);
+    width: min(var(--width), 100%);
     max-height: var(--height, 100%);
     padding: var(--padding, 0);
-    margin: var(--margin, 0);
-    align-self: center;
-}
-
-.center {
-    align-items: center;
-    justify-content: center;
-}
-
-x-frame, x-hbox, x-vbox, x-rows {
-    display: inline-block;
+    margin: var(--margin, 0 auto);
+    display: block;
 }
