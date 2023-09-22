@@ -296,6 +296,7 @@
 
     /* CARDS */
     --color-card: #ffffff;                          --color-card-text: #000000df;
+    --color-figcaption-text: #000000df;
 
     --radius-card: 0;
     --outline-outlined-card: 1px solid #00000080;
@@ -315,6 +316,7 @@
 
     /* NAVBAR */
     --color-navbar: var(--color-primary);             --color-navbar-text: var(--color-primary-text);
+    --color-navbar-link: var(--color-primary-text);
     
     --height-navbar: 56px;
     --padding-navbar: 16px;
@@ -322,6 +324,18 @@
     --shadow-navbar: 0 7px 25px -10px rgba(0, 0, 0, 0.12), 0 7px 25px 0 rgba(0, 0, 0, 0.24), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
     --border-navbar: none;
     --radius-navbar: 0;
+
+    /* BREADCRUMBS */
+    --color-breadcrumbs: var(--color-primary-1);      --color-breadcrumbs-text: var(--color-primary-1-text);
+    --color-breadcrumbs-link: var(--color-primary-1-text);
+    --color-breadcrumbs-separator: var(--color-primary-3);
+
+    --height-breadcrumbs: 32px;
+    --padding-breadcrumbs: 16px;
+    --shadow-breadcrumbs: none;
+    --border-breadcrumbs: none;
+    --radius-breadcrumbs: 0;
+    --separator-breadcrumbs: "  >  ";
 }
 
 /* Extra styles */
@@ -423,4 +437,8 @@ button, .button, input[type=button], input[type=submit] {
 
 .navbar {
     position: sticky;
+}
+
+:is(.navbar, .breadcrumbs) a:not(:hover) {
+    text-decoration: none;
 }

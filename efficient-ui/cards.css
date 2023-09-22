@@ -23,7 +23,7 @@
 }
 
 figcaption {
-    color: var(--color-caption-text);
+    color: var(--color-figcaption-text);
 }
 
 .card-outline {

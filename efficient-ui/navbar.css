@@ -8,6 +8,7 @@
     border: var(--shadow-navbar);
     padding: var(--padding-navbar);
     border-radius: var(--radius-navbar);
+    color: var(--color-navbar-text);
 }
 
 .navbar ul {
@@ -21,6 +22,5 @@
 }
 
 .navbar :is(:any-link, a:hover:visited) {
-    color: var(--color-navbar-text);
-    text-decoration: none;
+    color: var(--color-navbar-link);
 }

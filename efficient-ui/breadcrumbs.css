@@ -1,0 +1,30 @@
+.breadcrumbs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-breadcrumbs);
+    height: var(--height-breadcrumbs);
+    box-shadow: var(--shadow-breadcrumbs);
+    border: var(--shadow-breadcrumbs);
+    padding: var(--padding-breadcrumbs);
+    border-radius: var(--radius-breadcrumbs);
+    color: var(--color-breadcrumbs-text);
+}
+
+.breadcrumbs ul {
+    display: flex;
+    list-style: none;
+    gap: var(--gap-breadcrumbs);
+}
+
+.breadcrumbs {
+    width: 100%;
+}
+
+.breadcrumbs :is(:any-link, a:hover:visited) {
+    color: var(--color-breadcrumbs-link);
+}
+
+.breadcrumbs li:not(:last-child)::after {
+    content: var(--separator-breadcrumbs);
+}
