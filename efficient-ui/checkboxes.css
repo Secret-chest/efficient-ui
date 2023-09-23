@@ -200,8 +200,24 @@ input[type="checkbox"].switch:hover {
     border: var(--border-switch-hover);
 }
 
+input[type="checkbox"].switch:hover::after {
+    background-color: var(--color-switch-thumb-hover);
+    box-shadow: var(--shadow-switch-thumb-hover);
+    border: var(--border-switch-thumb-hover);
+    width: var(--width-switch-thumb-hover);
+    height: var(--height-switch-thumb-hover);
+}
+
 input[type="checkbox"].switch:checked:hover {
     background-color: var(--color-switch-on-hover);
     box-shadow: var(--shadow-switch-on-hover);
     border: var(--border-switch-on-hover);
+}
+
+input[type="checkbox"].switch:checked:hover::after {
+    background-color: var(--color-switch-thumb-on-hover);
+    box-shadow: var(--shadow-switch-thumb-on-hover);
+    border: var(--border-switch-thumb-on-hover);
+    width: var(--width-switch-thumb-on-hover);
+    height: var(--height-switch-thumb-on-hover);
 }
