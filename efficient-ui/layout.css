@@ -20,8 +20,7 @@ x-hbox.wrap, x-vbox.wrap {
 
 x-rows {
     display: grid;
-    grid-auto-flow: column;
-    grid-auto-columns: repeat(auto-fit, 1fr);
+    grid-template-columns: repeat(auto-fill, minmax(var(--preferred-width), 1fr));
     gap: var(--gap-box);
 }
 
@@ -37,10 +36,6 @@ x-buttonbox :is(button, .button, input[type="button"], input[type="submit"]) {
 
 :is(x-hbox, x-vbox, x-buttonbox, x-rows).nopad {
     gap: 0;
-}
-
-x-frame, x-hbox, x-vbox, x-rows {
-    display: inline-block;
 }
 
 x-frame {
