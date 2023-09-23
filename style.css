@@ -7,3 +7,7 @@
 #flow-example > .card {
     min-width: clamp(320px, 50%, 400px);
 }
+
+#form-examples > .card {
+    min-width: clamp(320px, 50%, 400px);
+}
