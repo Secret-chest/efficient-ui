@@ -354,7 +354,7 @@ h6 {
     text-underline-offset: .1em;
 }
 
-button, .button, input[type=button], input[type=submit] {
+button, .button, input[type=button], input[type=submit], input[type=reset], input[type="file"]::file-selector-button {
     /* Make it look nicer */
     text-transform: uppercase;
 }
@@ -421,7 +421,7 @@ input[type="range"]::-moz-range-thumb {
     transition: box-shadow 375ms cubic-bezier(0.61, 1, 0.88, 1);
 }
 
-button, .button, input[type=button], input[type=submit] {
+button, .button, input[type=button], input[type=submit], input[type=reset], input[type="file"]::file-selector-button {
     transition: box-shadow 375ms cubic-bezier(0.5, 1, 0.89, 1), background 375ms cubic-bezier(0.5, 1, 0.89, 1);
 }
 

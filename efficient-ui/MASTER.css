@@ -14,5 +14,6 @@ Link or import only this file, or use the upcoming minified version
 @import url("ranges.css");
 @import url("navbar.css");
 @import url("breadcrumbs.css");
+@import url("files.css");
 
 @import url("THEME.css");

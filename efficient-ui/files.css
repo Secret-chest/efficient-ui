@@ -1,0 +1,9 @@
+input[type="file"]::file-selector-button {
+    appearance: none;
+    display: inline-flex;
+}
+
+input[type="file"] {
+    display: flex;
+    flex-flow: row wrap;
+}
