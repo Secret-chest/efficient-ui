@@ -1,0 +1,36 @@
+x-tab {
+    display: none;
+    order: 2;
+    width: 100%;
+  }
+  
+  label:has(input[type="radio"]:checked) + x-tab {
+    display: block;
+  }
+  
+  x-notebook > label > input[type="radio"] {
+    display: none;
+  }
+  
+  /* Style the labels to resemble tabs */
+  x-notebook > label {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0 0;
+  }
+  
+  label:has(input[type="radio"]:checked) {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-bottom: 1px solid #fff;
+  }
+  
+  x-notebook {
+    display: flex;
+    flex-flow: row wrap;
+  }
+  
+  
