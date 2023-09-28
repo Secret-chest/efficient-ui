@@ -1,36 +1,48 @@
-x-tab {
+x-notebook > x-tab {
     display: none;
     order: 2;
     width: 100%;
-  }
-  
-  label:has(input[type="radio"]:checked) + x-tab {
+}
+
+x-notebook > label:has(input[type="radio"]:checked) + x-tab {
     display: block;
-  }
-  
-  x-notebook > label > input[type="radio"] {
+}
+
+x-notebook > label > input[type="radio"] {
     display: none;
-  }
-  
-  /* Style the labels to resemble tabs */
-  x-notebook > label {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #f2f2f2;
+}
+
+x-notebook > label {
+    display: flex;
+    background: var(--color-tab);
+    color: var(--color-tab-text);
+    height: var(--height-tab);
+    min-width: var(--width-tab);
+    justify-content: var(--align-tab);
+    
     cursor: pointer;
-    border: 1px solid #ccc;
-    border-radius: 5px 5px 0 0;
-  }
-  
-  label:has(input[type="radio"]:checked) {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-bottom: 1px solid #fff;
-  }
-  
-  x-notebook {
+    border: var(--border-tab);
+    border-radius: var(--radius-tab);
+}
+
+x-notebook > label:hover {
+    background: var(--color-tab-hover);
+    color: var(--color-tab-hover-text);
+}
+
+x-notebook > label:has(input[type="radio"]:checked) {
+    background: var(--color-tab-selected);
+    color: var(--color-tab-selected-text);
+    border: var(--border-tab-selected);
+}
+
+x-notebook > label:has(input[type="radio"]:checked):hover {
+    background: var(--color-tab-hover-selected);
+    color: var(--color-tab-hover-selected-text);
+}
+
+x-notebook {
     display: flex;
     flex-flow: row wrap;
-  }
-  
-  
+    justify-content: var(--justify-tab-row);
+}

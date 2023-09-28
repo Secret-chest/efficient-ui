@@ -336,6 +336,20 @@
     --border-breadcrumbs: none;
     --radius-breadcrumbs: 0;
     --separator-breadcrumbs: "  >  ";
+
+    /* TABS */
+    --color-tab: var(--color-primary);               --color-tab-text: var(--color-primary-text);
+    --color-tab-selected: var(--color-primary);      --color-tab-selected-text: var(--color-primary-text);
+    --color-tab-hover: var(--color-primary);         --color-tab-hover-text: var(--color-primary-text);
+    --color-tab-hover-selected: var(--color-primary);--color-tab-hover-selected-text: var(--color-primary-text);
+
+    --justify-tab-row: space-around;
+    --height-tab: 36px;
+    --width-tab: 80px;
+    --align-tab: center;
+    --border-tab: none;
+    --border-tab-selected: 0 0 4px solid var(--color-accent) 0;
+    --radius-tab: 0;
 }
 
 /* Extra styles */
@@ -441,4 +455,15 @@ button, .button, input[type=button], input[type=submit], input[type=reset], inpu
 
 :is(.navbar, .breadcrumbs) a:not(:hover) {
     text-decoration: none;
+}
+
+x-notebook > label:has(input[type="radio"]:checked) {
+    border-bottom: 4px solid var(--color-accent);
+    transition: border 125ms ease;
+}
+
+x-notebook > label {
+    text-transform: uppercase;
+    font-weight: 600;
+    flex: 1 0 auto;
 }
