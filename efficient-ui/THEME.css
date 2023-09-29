@@ -350,6 +350,9 @@
     --border-tab: none;
     --border-tab-selected: 0 0 4px solid var(--color-accent) 0;
     --radius-tab: 0;
+
+    /* DIVIDERS */
+    --line-divider: 1px solid #00000080;
 }
 
 /* Extra styles */
