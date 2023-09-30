@@ -1,13 +1,27 @@
 ul {
-    list-style: var(--list-style, var(--unordered-list-style));
+    list-style: var(--list-style, var(--style-unordered-list));
 }
 
 ul li::marker {
-    color: var(--unordered-list-marker-color);
-    font-size: var(--unordered-list-marker-size);
+    color: var(--color-unordered-list-marker);
+    font: var(--font-unordered-list-marker);
     display: block;
 }
 
 ul:not(.noindent) {
-    margin-left: var(--unordered-list-indent);
+    margin-left: var(--indent-unordered-list);
+}
+
+ol {
+    list-style: var(--list-style, var(--style-ordered-list));
+}
+
+ol li::marker {
+    color: var(--color-ordered-list-marker);
+    font: var(--font-ordered-list-marker);
+    display: block;
+}
+
+ol:not(.noindent) {
+    margin-left: var(--indent-ordered-list);
 }

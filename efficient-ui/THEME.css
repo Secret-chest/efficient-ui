@@ -355,10 +355,15 @@
     --line-divider: 1px solid #00000080;
 
     /* LISTS */
-    --unordered-list-style: disc;
-    --unordered-list-marker-color: currentColor;
-    --unordered-list-marker-size: 1em;
-    --unordered-list-indent: 1em;
+    --style-unordered-list: disc;
+    --color-unordered-list-marker: currentColor;
+    --font-unordered-list-marker: var(--body-font);
+    --indent-unordered-list: 1em;
+
+    --style-ordered-list: decimal;
+    --color-ordered-list-marker: currentColor;
+    --font-ordered-list-marker: var(--body-font);
+    --indent-ordered-list: 1em;
 }
 
 /* Extra styles */
