@@ -353,6 +353,12 @@
 
     /* DIVIDERS */
     --line-divider: 1px solid #00000080;
+
+    /* LISTS */
+    --unordered-list-style: disc;
+    --unordered-list-marker-color: currentColor;
+    --unordered-list-marker-size: 1em;
+    --unordered-list-indent: 1em;
 }
 
 /* Extra styles */

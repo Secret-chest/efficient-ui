@@ -1,0 +1,13 @@
+ul {
+    list-style: var(--list-style, var(--unordered-list-style));
+}
+
+ul li::marker {
+    color: var(--unordered-list-marker-color);
+    font-size: var(--unordered-list-marker-size);
+    display: block;
+}
+
+ul:not(.noindent) {
+    margin-left: var(--unordered-list-indent);
+}
