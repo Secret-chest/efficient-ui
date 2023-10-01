@@ -61,7 +61,7 @@ ol.table > li:last-of-type {
     border-bottom: var(--border-cell-vertical);
 }
 
-ol.table > .list-header {
+ol.table > li.list-header {
     background: var(--color-row-header);
     color: var(--color-row-header-text);
     font: var(--table-header-font);
