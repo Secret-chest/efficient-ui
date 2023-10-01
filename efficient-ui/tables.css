@@ -3,7 +3,6 @@ table {
     background: var(--color-table);
     color: var(--color-table-text);
     font: var(--table-font);
-
 }
 
 td, th {
@@ -25,6 +24,44 @@ tr:nth-child(even) {
 }
 
 th {
+    background: var(--color-row-header);
+    color: var(--color-row-header-text);
+    font: var(--table-header-font);
+}
+
+ol.table {
+    background: var(--color-table);
+    color: var(--color-table-text);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font: var(--table-font);
+}
+
+ol.table > li {
+    border-top: var(--border-cell-vertical);
+    display: flex;
+    padding: var(--padding-cell);
+    align-items: center;
+    justify-content: left;
+    flex-flow: row wrap;
+}
+
+ol.table > li:nth-child(odd) {
+    background: var(--color-row-odd);
+    color: var(--color-row-odd-text);
+}
+
+ol.table > li:nth-child(even) {
+    background: var(--color-row-even);
+    color: var(--color-row-even-text);
+}
+
+ol.table > li:last-of-type {
+    border-bottom: var(--border-cell-vertical);
+}
+
+ol.table > .list-header {
     background: var(--color-row-header);
     color: var(--color-row-header-text);
     font: var(--table-header-font);

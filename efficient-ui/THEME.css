@@ -508,7 +508,7 @@ x-notebook > label {
     flex: 1 0 auto;
 }
 
-th {
+th, ol.table > .list-header {
     border: none;
 }
 
