@@ -11,7 +11,7 @@
         16px/1.33 /* size / line height */
         "Roboto", "Noto Sans", system-ui, apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Arial", sans-serif /* family */
         ;
-    --table-font: /* body text */
+    --table-font:
         normal /* style */
         normal /* variant */
         400 /* weight */
@@ -19,7 +19,7 @@
         15.4px/1.33 /* size / line height */
         "Roboto", "Noto Sans", system-ui, apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Arial", sans-serif /* family */
         ;
-    --table-header-font: /* body text */
+    --table-header-font:
         normal /* style */
         normal /* variant */
         500 /* weight */
@@ -50,6 +50,14 @@
         normal /* stretch */
         15px/1 /* size / line height */
         "Roboto", "Noto Sans", system-ui, apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Arial", sans-serif /* family */
+        ;
+    --badge-font: /* badges */
+        normal /* style */
+        normal /* variant */
+        700 /* weight */
+        normal /* stretch */
+        15px/1 /* size / line height */
+        "Roboto Mono", "Noto Sans", system-ui, apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, "Arial", sans-serif /* family */
         ;
     --gui-font: /* everything not covered by something else */
         var(--body-font);
@@ -390,6 +398,17 @@
     --color-row-odd: #00000010;                    --color-row-odd-text: #000000;
     --color-row-even: transparent;                   --color-row-even-text: #000000;
     --color-row-header: var(--color-primary-1);      --color-row-header-text: var(--color-primary-1-text);
+
+    /* BADGES */
+    --border-badge: none;
+    --shadow-badge: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    --x-badge: 100%;
+    --y-badge: 0;
+    --width-badge: 3ch;
+    --height-badge: 3ch;
+    --radius-badge: 3ch;
+    --padding-badge: 0.5ch;
+    --color-badge: var(--color-accent);              --color-badge-text: var(--color-accent-text);
 }
 
 /* Extra styles */

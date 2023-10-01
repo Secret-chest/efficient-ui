@@ -1,0 +1,23 @@
+[data-badge]:not(.nobadgepos) {
+    position: relative;
+}
+
+[data-badge]::after {
+    content: attr(data-badge);
+    position: absolute;
+    box-shadow: var(--shadow-badge);
+    border: var(--border-badge);
+    background-color: var(--color-badge);
+    color: var(--color-badge-text);
+    top: var(--y-badge);
+    left: var(--x-badge);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: var(--width-badge);
+    min-height: var(--height-badge);
+    border-radius: var(--radius-badge);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font: var(--badge-font);
+    padding: var(--padding-badge);
+}

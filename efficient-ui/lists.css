@@ -2,7 +2,7 @@ ul {
     list-style: var(--list-style, var(--style-unordered-list));
 }
 
-ul li::marker {
+ul > li::marker {
     color: var(--color-unordered-list-marker);
     font: var(--font-unordered-list-marker);
     display: block;
@@ -16,12 +16,12 @@ ol {
     list-style: var(--list-style, var(--style-ordered-list));
 }
 
-ol li::marker {
+ol > li::marker {
     color: var(--color-ordered-list-marker);
     font: var(--font-ordered-list-marker);
     display: block;
 }
 
-ol:not(.noindent) {
+ol:not(.noindent, .toast-container) {
     margin-left: var(--indent-ordered-list);
 }
