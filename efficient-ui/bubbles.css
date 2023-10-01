@@ -1,0 +1,21 @@
+.chat-bubble {
+    border: var(--border-bubble);
+    box-shadow: var(--shadow-bubble);
+    width: 100%;
+    border-radius: var(--radius-bubble);
+    padding: var(--padding-bubble);
+    position: relative;
+    background: var(--color-bubble);
+    color: var(--color-bubble-text);
+}
+
+.chat-bubble.bubble-alt {
+    border: var(--border-bubble);
+    box-shadow: var(--shadow-bubble);
+    width: 100%;
+    border-radius: var(--radius-bubble);
+    padding: var(--padding-bubble);
+    position: relative;
+    background: var(--color-bubble-alt);
+    color: var(--color-bubble-alt-text);
+}

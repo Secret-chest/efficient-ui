@@ -1,0 +1,7 @@
+.avatar {
+    aspect-ratio: 1/1;
+    height: var(--size);
+    width: var(--size);
+    object-fit: cover;
+    border-radius: var(--radius-avatar);
+}

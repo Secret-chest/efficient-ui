@@ -409,6 +409,17 @@
     --radius-badge: 3ch;
     --padding-badge: 0.5ch;
     --color-badge: var(--color-accent);              --color-badge-text: var(--color-accent-text);
+
+    /* AVATARS */
+    --radius-avatar: 50%;
+
+    /* BUBBLES */
+    --border-bubble: none;
+    --shadow-bubble: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    --radius-bubble: 1em;
+    --padding-bubble: 1ch;
+    --color-bubble: var(--color-accent-1);           --color-bubble-text: var(--color-accent-1-text);
+    --color-bubble-alt: var(--color-accent-4);       --color-bubble-alt-text: var(--color-accent-4-text);
 }
 
 /* Extra styles */
@@ -538,4 +549,28 @@ tbody th {
 thead th {
     vertical-align: bottom;
     text-align: center;
+}
+
+.chat-bubble::before {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border: 0.75em solid;
+    border-color: transparent var(--color-bubble) transparent transparent;
+    left: -1.5em;
+    top: 1em;
+}
+
+.bubble-alt::before {
+    content: "";
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    border: 0.75em solid;
+    border-color: transparent transparent transparent var(--color-bubble-alt);
+    transform: translateX(100%);
+    width: 100%;
+    left: 0;
+    top: 1em;
 }

@@ -20,5 +20,7 @@ Link or import only this file, or use the upcoming minified version
 @import url("lists.css");
 @import url("tables.css");
 @import url("badges.css");
+@import url("avatars.css");
+@import url("bubbles.css");
 
 @import url("THEME.css");

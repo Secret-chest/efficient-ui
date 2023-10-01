@@ -322,12 +322,35 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                 <article class="card">
                     <section class="card-main" role="main">
                         <h1>Badges</h1>
-                        <p>Any element may be decorated with a badge using the <code>data-badge</code> attribute. However, note that some widgets such as radio buttons already use ::after and may not carry a badge.</p>
-                        <div style="width: 64px; height: 64px; background-color: var(--color-primary);" data-badge="1"></div>
-                        <br>
-                        <div style="width: 64px; height: 64px; background-color: var(--color-primary);" data-badge="1000"></div>
-                        <br>
-                        <div style="width: 64px; height: 64px; background-color: var(--color-primary);" data-badge="consectetur"></div>
+                        <p>Any element may be decorated with a badge using the <code>data-badge</code> attribute. However, note that some widgets such as radio buttons already use ::after and may not carry a badge.</p><br>
+                        <x-hbox>
+                            <div style="width: 64px; height: 64px; background-color: var(--color-primary);" data-badge="1"></div>
+                            <br>
+                            <div style="width: 64px; height: 64px; background-color: var(--color-primary);" data-badge="1000"></div>
+                            <br>
+                            <div style="width: 64px; height: 64px; background-color: var(--color-primary);" data-badge="consectetur"></div>
+                        </x-hbox>
+                    </section>
+                </article>
+                <article class="card">
+                    <section class="card-main" role="main">
+                        <h1>Avatars and chat bubbles</h1><br>
+                        <x-vbox>
+                            <x-hbox>
+                                <img class="avatar" style="--size: 48px;" src="einstein.jpg"></img>
+                                <blockquote class="chat-bubble">
+                                    <p><i>Make it as simple as possible, but not simpler.</i></p>
+                                    <cite>&mdash; Albert Einstein</cite>
+                                </blockquote>
+                            </x-hbox>
+                            <x-hbox>
+                                <blockquote class="chat-bubble bubble-alt">
+                                    <p><i>Make it as simple as possible, but not simpler.</i></p>
+                                    <cite>&mdash; Albert Einstein</cite>
+                                </blockquote>
+                                <img class="avatar" style="--size: 48px;" src="einstein.jpg"></img>
+                            </x-hbox>
+                        </x-vbox>
                     </section>
                 </article>
             </x-frame>
