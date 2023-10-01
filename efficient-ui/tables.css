@@ -1,0 +1,31 @@
+table {
+    border-collapse: collapse;
+    background: var(--color-table);
+    color: var(--color-table-text);
+    font: var(--table-font);
+
+}
+
+td, th {
+    padding: var(--padding-cell);
+    border-top: var(--border-cell-vertical);
+    border-bottom: var(--border-cell-vertical);
+    border-left: var(--border-cell-horizontal);
+    border-right: var(--border-cell-horizontal);
+}
+
+tr:nth-child(odd) {
+    background: var(--color-row-odd);
+    color: var(--color-row-odd-text);
+}
+
+tr:nth-child(even) {
+    background: var(--color-row-even);
+    color: var(--color-row-even-text);
+}
+
+th {
+    background: var(--color-row-header);
+    color: var(--color-row-header-text);
+    font: var(--table-header-font);
+}
