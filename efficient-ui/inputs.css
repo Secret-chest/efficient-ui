@@ -8,6 +8,7 @@ input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=res
     border-radius: var(--radius-input);
     min-width: var(--min-width-input);
     flex: 1 0 auto;
+    appearance: none;
 }
 
 input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]):focus {

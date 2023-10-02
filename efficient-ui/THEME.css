@@ -610,3 +610,7 @@ thead th {
 input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat {
     border-bottom: 2px solid var(--color-primary) !important;
 }
+
+:disabled {
+    opacity: 0.5;
+}
