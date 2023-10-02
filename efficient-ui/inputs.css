@@ -71,3 +71,35 @@ input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=res
 .input-flat::placeholder {
     color: var(--color-flat-input-text);
 }
+
+/* ICONS */
+
+input:is([type="date"], [type="datetime-local"], [type="month"], [type="week"], [type="time"])::-webkit-calendar-picker-indicator {
+    display: block;
+    width: var(--size-input-icon);
+    height: var(--size-input-icon);
+    padding: 0;
+    background: currentColor;
+    -webkit-mask: var(--input-icon);
+    mask: var(--input-icon);
+}
+
+input:is([type="date"]) {
+    --input-icon: url("./icons/input-date.svg");
+}
+
+input:is([type="month"]) {
+    --input-icon: url("./icons/input-month.svg");
+}
+
+input:is([type="week"]) {
+    --input-icon: url("./icons/input-week.svg");
+}
+
+input:is([type="datetime-local"]) {
+    --input-icon: url("./icons/input-datetime-local.svg");
+}
+
+input:is([type="time"]) {
+    --input-icon: url("./icons/input-time.svg");
+}

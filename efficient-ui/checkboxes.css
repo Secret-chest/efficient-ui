@@ -92,7 +92,7 @@ label:has(input[type="checkbox"]) {
 
 /* Radio */
 
-input[type="radio"] {
+input[type="radio"]:not(.switch) {
     width: var(--size-checkbox);
     height: var(--size-checkbox);
     aspect-ratio: 1/1;
@@ -110,31 +110,31 @@ input[type="radio"] {
     cursor: pointer;  /* a11y */
 }
 
-input[type="radio"]:hover {
+input[type="radio"]:not(.switch):hover {
     box-shadow: inset 0 0 0 0 transparent, var(--shadow-form-hover);
     border: var(--border-radio-hover);
     background: var(--color-radio-hover);
     color: var(--color-radio-hover-text);
 }
 
-input[type="radio"]:checked {
+input[type="radio"]:not(.switch):checked {
     /* Box shadows are shown when printed */
     box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-radio-active), var(--shadow-form-checked);
     border: var(--border-radio-checked);
     color: var(--color-radio-active-text);
 }
 
-input[type="radio"]:checked:hover {
+input[type="radio"]:not(.switch):checked:hover {
     box-shadow: inset 0 0 0 var(--size-checkbox) var(--color-radio-active-hover), var(--shadow-form-checked-hover);
     border: var(--border-checkbox-checked-hover);
     color: var(--color-radio-active-hover-text);
 }
 
-input[type="radio"]:checked:hover::after {
+input[type="radio"]:not(.switch):checked:hover::after {
     background: var(--color-radio-active-hover-text);
 }
 
-input[type="radio"]:checked::after {
+input[type="radio"]:not(.switch):checked::after {
     /* Position directly on top of the checkbox */
     position: absolute;
     width: var(--size-checkbox);
@@ -155,7 +155,7 @@ label:has(input[type="radio"]) {
 
 /* Checkbox - switch style */
 
-input[type="checkbox"].switch {
+:is(input[type="checkbox"], input[type=radio]).switch {
     appearance: none;
     width: var(--width-switch);
     height: var(--height-switch);
@@ -167,7 +167,7 @@ input[type="checkbox"].switch {
     justify-content: flex-start;
 }
 
-input[type="checkbox"].switch:checked {
+:is(input[type="checkbox"], input[type=radio]).switch:checked {
     background: var(--color-switch-on);
     border-radius: var(--radius-switch);
     cursor: pointer;
@@ -176,7 +176,7 @@ input[type="checkbox"].switch:checked {
     justify-content: flex-start;
 }
 
-input[type="checkbox"].switch::after {
+:is(input[type="checkbox"], input[type=radio]).switch::after {
     background: var(--color-switch-thumb);
     box-shadow: var(--shadow-switch-thumb);
     content: "";
@@ -186,7 +186,7 @@ input[type="checkbox"].switch::after {
     transform: translateX(calc(var(--padding-switch-thumb)));
 }
 
-input[type="checkbox"].switch:checked::after {
+:is(input[type="checkbox"], input[type=radio]).switch:checked::after {
     background-color: var(--color-switch-thumb-on);
     box-shadow: var(--shadow-switch-thumb-on);
     border: var(--border-switch-thumb-on);
@@ -194,13 +194,13 @@ input[type="checkbox"].switch:checked::after {
     border-radius: var(--radius-switch-thumb-on);
 }
 
-input[type="checkbox"].switch:hover {
+:is(input[type="checkbox"], input[type=radio]).switch:hover {
     background-color: var(--color-switch-hover);
     box-shadow: var(--shadow-switch-hover);
     border: var(--border-switch-hover);
 }
 
-input[type="checkbox"].switch:hover::after {
+:is(input[type="checkbox"], input[type=radio]).switch:hover::after {
     background-color: var(--color-switch-thumb-hover);
     box-shadow: var(--shadow-switch-thumb-hover);
     border: var(--border-switch-thumb-hover);
@@ -208,13 +208,13 @@ input[type="checkbox"].switch:hover::after {
     height: var(--height-switch-thumb-hover);
 }
 
-input[type="checkbox"].switch:checked:hover {
+:is(input[type="checkbox"], input[type=radio]).switch:checked:hover {
     background-color: var(--color-switch-on-hover);
     box-shadow: var(--shadow-switch-on-hover);
     border: var(--border-switch-on-hover);
 }
 
-input[type="checkbox"].switch:checked:hover::after {
+:is(input[type="checkbox"], input[type=radio]).switch:checked:hover::after {
     background-color: var(--color-switch-thumb-on-hover);
     box-shadow: var(--shadow-switch-thumb-on-hover);
     border: var(--border-switch-thumb-on-hover);

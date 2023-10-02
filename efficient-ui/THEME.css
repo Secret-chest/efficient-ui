@@ -448,6 +448,8 @@
     --height-input: 36px;
     --padding-input: 4px 8px;
     --min-width-input: 64px;
+
+    --size-input-icon: 16px;
 }
 
 /* Extra styles */
