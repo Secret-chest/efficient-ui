@@ -74,7 +74,7 @@ input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=res
 
 /* ICONS */
 
-input:is([type="date"], [type="datetime-local"], [type="month"], [type="week"], [type="time"])::-webkit-calendar-picker-indicator {
+input:is([type="date"], [type="datetime-local"], [type="month"], [type="week"], [type="time"])::-webkit-calendar-picker-indicator, input[type="search"]::-webkit-search-cancel-button {
     display: block;
     width: var(--size-input-icon);
     height: var(--size-input-icon);
@@ -82,6 +82,7 @@ input:is([type="date"], [type="datetime-local"], [type="month"], [type="week"], 
     background: currentColor;
     -webkit-mask: var(--input-icon);
     mask: var(--input-icon);
+    appearance: none;
 }
 
 input:is([type="date"]) {
@@ -102,4 +103,8 @@ input:is([type="datetime-local"]) {
 
 input:is([type="time"]) {
     --input-icon: url("./icons/input-time.svg");
+}
+
+input:is([type="search"]) {
+    --input-icon: url("./icons/search-delete.svg");
 }
