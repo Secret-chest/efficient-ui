@@ -1,0 +1,72 @@
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]) {
+    background: var(--color-input);
+    color: var(--color-input-text);
+    box-shadow: var(--shadow-input);
+    border: var(--border-input);
+    min-height: var(--height-input);
+    padding: var(--padding-input);
+    border-radius: var(--radius-input);
+    min-width: var(--min-width-input);
+    flex: 1 0 auto;
+}
+
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]):focus {
+    outline: none;  /* there is a blinking cursor, better not to have an outline */
+    background: var(--color-input-active);
+    color: var(--color-input-active-text);
+    box-shadow: var(--shadow-input-active);
+    border: var(--border-input-active);
+}
+
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]):hover {
+    background: var(--color-input-hover);
+    color: var(--color-input-hover-text);
+    box-shadow: var(--shadow-input-hover);
+    border: var(--border-input-hover);
+}
+
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]):hover::placeholder {
+    color: var(--color-input-hover-text);
+}
+
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]):focus::placeholder {
+    color: var(--color-input-focus-text);
+}
+
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color])::placeholder {
+    color: var(--color-input-text);
+}
+
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat {
+    background: var(--color-flat-input);
+    color: var(--color-flat-input-text);
+    box-shadow: var(--shadow-flat-input);
+    border: var(--border-flat-input);
+    border-radius: var(--radius-flat-input);
+}
+
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat:focus {
+    background: var(--color-flat-input-active);
+    color: var(--color-flat-input-active-text);
+    box-shadow: var(--shadow-flat-input-active);
+    border: var(--border-flat-input-active);
+}
+
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat:hover {
+    background: var(--color-flat-input-hover);
+    color: var(--color-flat-input-hover-text);
+    box-shadow: var(--shadow-flat-input-hover);
+    border: var(--border-flat-input-hover);
+}
+
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat:hover::placeholder {
+    color: var(--color-flat-input-hover-text);
+}
+
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat:focus::placeholder {
+    color: var(--color-flat-input-focus-text);
+}
+
+.input-flat::placeholder {
+    color: var(--color-flat-input-text);
+}

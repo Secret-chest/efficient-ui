@@ -11,3 +11,7 @@
 #form-examples > .card {
     min-width: clamp(320px, 50%, 400px);
 }
+
+#inputs-examples input {
+    width: 100%;
+}

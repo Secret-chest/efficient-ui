@@ -124,37 +124,37 @@
     
     /* GENERAL COLOURS */
     /* background */                                  /* foreground */
-    --color-primary: #3F51B5;                      --color-primary-text: #ffffff;
-    --color-primary-1: #303F9F;                    --color-primary-1-text: #ffffff;
-    --color-primary-2: #1A237E;                    --color-primary-2-text: #ffffff;
-    --color-primary-3: #7986CB;                    --color-primary-3-text: #000000;
-    --color-primary-4: #C5CAE9;                    --color-primary-4-text: #000000;
+    --color-primary: #3F51B5;                       --color-primary-text: #ffffff;
+    --color-primary-1: #303F9F;                     --color-primary-1-text: #ffffff;
+    --color-primary-2: #1A237E;                     --color-primary-2-text: #ffffff;
+    --color-primary-3: #7986CB;                     --color-primary-3-text: #000000;
+    --color-primary-4: #C5CAE9;                     --color-primary-4-text: #000000;
 
-    --color-accent: #E91E63;                       --color-accent-text: #ffffff;
-    --color-accent-1: #C2185B;                     --color-accent-1-text: #ffffff;
-    --color-accent-2: #880E4F;                     --color-accent-2-text: #ffffff;
-    --color-accent-3: #F06292;                     --color-accent-3-text: #000000;
-    --color-accent-4: #F8BBD0;                     --color-accent-4-text: #000000;
+    --color-accent: #E91E63;                        --color-accent-text: #ffffff;
+    --color-accent-1: #C2185B;                      --color-accent-1-text: #ffffff;
+    --color-accent-2: #880E4F;                      --color-accent-2-text: #ffffff;
+    --color-accent-3: #F06292;                      --color-accent-3-text: #000000;
+    --color-accent-4: #F8BBD0;                      --color-accent-4-text: #000000;
 
-    --color-background: #fafafa;                   --color-background-text: #000000df;
-    --color-menu: #fafafa;                         --color-menu-text: #000000cc;
-                                                     --color-caption-text: #000000b9;
-                                                     --color-label-text: #000000df;
+    --color-background: #fafafa;                    --color-background-text: #000000df;
+    --color-menu: #fafafa;                          --color-menu-text: #000000cc;
+                                                      --color-caption-text: #000000b9;
+                                                      --color-label-text: #000000df;
 
-    --color-error: #d50000;                        --color-error-text: #ffffff;
-    --color-alert: #ffab00;                        --color-alert-text: #000000;
-    --color-info: #00b8d4;                         --color-info-text: #000000;
-    --color-success: #00c853;                      --color-success-text: #ffffff;
+    --color-error: #d50000;                         --color-error-text: #ffffff;
+    --color-alert: #ffab00;                         --color-alert-text: #000000;
+    --color-info: #00b8d4;                          --color-info-text: #000000;
+    --color-success: #00c853;                       --color-success-text: #ffffff;
 
-    --color-not-accent: transparent;                 --color-not-accent-text: var(--color-background-text);
+    --color-not-accent: transparent;                  --color-not-accent-text: var(--color-background-text);
     
     --color-scheme: light;
 
     /* CODE BLOCKS */
-    --color-code: #263238;                         --color-code-text: #ffffff;
-    --color-quote: #fafafa;                        --color-quote-text: #000000cc;
-    --color-short-code: #f5f5f5;                   --color-short-code-text: #000000cc;
-    --color-keyboard: #757575;                     --color-keyboard-text: #ffffff;
+    --color-code: #263238;                          --color-code-text: #ffffff;
+    --color-quote: #fafafa;                         --color-quote-text: #000000cc;
+    --color-short-code: #f5f5f5;                    --color-short-code-text: #000000cc;
+    --color-keyboard: #757575;                      --color-keyboard-text: #ffffff;
 
     --color-scheme-code: dark;
 
@@ -170,12 +170,12 @@
     --shadow-keyboard: 0 1px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.24);
 
     /* BUTTONS */
-    --color-button: var(--color-primary);            --color-button-text: var(--color-primary-text);
-    --color-button-hover: var(--color-primary);      --color-button-hover-text: var(--color-primary-text);
-    --color-button-active: var(--color-primary);     --color-button-active-text: var(--color-primary-text);
-    --color-flat-button: transparent;                --color-flat-button-text: var(--color-primary);
-    --color-flat-button-hover: #00000020;          --color-flat-button-hover-text: var(--color-primary-2);
-    --color-flat-button-active: #00000030;         --color-flat-button-active-text: var(--color-primary-3);
+    --color-button: var(--color-primary);             --color-button-text: var(--color-primary-text);
+    --color-button-hover: var(--color-primary);       --color-button-hover-text: var(--color-primary-text);
+    --color-button-active: var(--color-primary);      --color-button-active-text: var(--color-primary-text);
+    --color-flat-button: transparent;                 --color-flat-button-text: var(--color-primary);
+    --color-flat-button-hover: #00000020;           --color-flat-button-hover-text: var(--color-primary-2);
+    --color-flat-button-active: #00000030;          --color-flat-button-active-text: var(--color-primary-3);
 
     --shadow-button: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
     --shadow-button-hover: 0 7px 25px -10px rgba(0, 0, 0, 0.12), 0 7px 25px 0 rgba(0, 0, 0, 0.24), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
@@ -190,7 +190,6 @@
     --radius-button: 2px;
     --radius-flat-button: 2px;
     
-    --margin-button: 8px;
     --height-button: 36px;
     --padding-button: 4px 8px;
     --gap-button: 4px;
@@ -204,10 +203,10 @@
     --color-link-visited-hover-text: #1565c0;
 
     /* TOASTS */
-    --color-callout: #546e7a;                      --color-callout-text: #ffffff;
-    --color-callout-1: #37474f;                    --color-callout-1-text: #ffffff;
-    --color-callout-2: #78909c;                    --color-callout-2-text: #ffffff;
-                                                     --color-callout-button-text: var(--color-accent-4);
+    --color-callout: #546e7a;                       --color-callout-text: #ffffff;
+    --color-callout-1: #37474f;                     --color-callout-1-text: #ffffff;
+    --color-callout-2: #78909c;                     --color-callout-2-text: #ffffff;
+                                                      --color-callout-button-text: var(--color-accent-4);
     
     --border-toast: none;
     --radius-toast: 2px;
@@ -224,15 +223,15 @@
     --shadow-toast: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
     
     /* CHECKBOXES */
-    --color-checkbox: var(--color-not-accent);       --color-checkbox-text: var(--color-accent);
-    --color-checkbox-hover: var(--color-not-accent); --color-checkbox-hover-text: var(--color-accent);
-    --color-checkbox-active: var(--color-accent);    --color-checkbox-active-text: var(--color-accent-text);
+    --color-checkbox: var(--color-not-accent);        --color-checkbox-text: var(--color-accent);
+    --color-checkbox-hover: var(--color-not-accent);  --color-checkbox-hover-text: var(--color-accent);
+    --color-checkbox-active: var(--color-accent);     --color-checkbox-active-text: var(--color-accent-text);
     --color-checkbox-indeterminate: var(--color-accent);--color-checkbox-indeterminate-text: var(--color-accent-text);
     --color-checkbox-indeterminate-hover: var(--color-accent);--color-checkbox-indeterminate-hover-text: var(--color-accent-text);
     --color-checkbox-active-hover: var(--color-accent);--color-checkbox-active-hover-text: var(--color-accent-text);
-    --color-radio: var(--color-not-accent);          --color-radio-text: var(--color-accent);
-    --color-radio-active: var(--color-not-accent);   --color-radio-active-text: var(--color-accent);
-    --color-radio-hover: var(--color-not-accent);    --color-radio-hover-text: var(--color-accent);
+    --color-radio: var(--color-not-accent);           --color-radio-text: var(--color-accent);
+    --color-radio-active: var(--color-not-accent);    --color-radio-active-text: var(--color-accent);
+    --color-radio-hover: var(--color-not-accent);     --color-radio-hover-text: var(--color-accent);
     --color-radio-active-hover: var(--color-not-accent);--color-radio-active-hover-text: var(--color-accent);
 
     --border-checkbox: 0.125em solid currentColor;
@@ -246,10 +245,10 @@
     --border-radio-hover: 0.125em solid currentColor;
     --border-radio-checked-hover: 0.125em solid currentColor;
 
-    --color-switch: #eeeeee;                       --color-switch-thumb: #757575;
-    --color-switch-on: var(--color-accent-4);        --color-switch-thumb-on: var(--color-accent);
-    --color-switch-hover: #eeeeee;                 --color-switch-thumb-hover: #757575;
-    --color-switch-on-hover: var(--color-accent-4);  --color-switch-thumb-on-hover: var(--color-accent);
+    --color-switch: #eeeeee;                        --color-switch-thumb: #757575;
+    --color-switch-on: var(--color-accent-4);         --color-switch-thumb-on: var(--color-accent);
+    --color-switch-hover: #eeeeee;                  --color-switch-thumb-hover: #757575;
+    --color-switch-on-hover: var(--color-accent-4);   --color-switch-thumb-on-hover: var(--color-accent);
 
     --border-switch: none;
     --border-switch-hover: none;
@@ -340,7 +339,7 @@
     --gap-box: 16px;
 
     /* NAVBAR */
-    --color-navbar: var(--color-primary);             --color-navbar-text: var(--color-primary-text);
+    --color-navbar: var(--color-primary);            --color-navbar-text: var(--color-primary-text);
     --color-navbar-link: var(--color-primary-text);
     
     --height-navbar: 56px;
@@ -351,7 +350,7 @@
     --radius-navbar: 0;
 
     /* BREADCRUMBS */
-    --color-breadcrumbs: var(--color-primary-1);      --color-breadcrumbs-text: var(--color-primary-1-text);
+    --color-breadcrumbs: var(--color-primary-1);     --color-breadcrumbs-text: var(--color-primary-1-text);
     --color-breadcrumbs-link: var(--color-primary-1-text);
     --color-breadcrumbs-separator: var(--color-primary-3);
 
@@ -420,6 +419,35 @@
     --padding-bubble: 1ch;
     --color-bubble: var(--color-accent-1);           --color-bubble-text: var(--color-accent-1-text);
     --color-bubble-alt: var(--color-accent-4);       --color-bubble-alt-text: var(--color-accent-4-text);
+
+    /* INPUTS */
+    --color-input: #ffffff;                        --color-input-text: #000000bb;
+    --color-input-hover: #ffffff;                  --color-input-hover-text: #000000bb;
+    --color-input-active: #ffffff;                 --color-input-active-text: #000000df;
+    --color-flat-input: transparent;                 --color-flat-input-text: #000000bb;
+    --color-flat-input-hover: transparent;           --color-flat-input-hover-text: #000000bb;
+    --color-flat-input-active: transparent;          --color-flat-input-active-text: #000000df;
+
+    --shadow-input: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    --shadow-input-hover: 0 7px 25px -10px rgba(0, 0, 0, 0.12), 0 7px 25px 0 rgba(0, 0, 0, 0.24), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    --shadow-input-active: 0 7px 25px -10px rgba(0, 0, 0, 0.12), 0 7px 25px 0 rgba(0, 0, 0, 0.24), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    --shadow-flat-input: none;
+    --shadow-flat-input-hover: none;
+    --shadow-flat-input-active: none;
+
+    --border-input: none;
+    --border-input-hover: none;
+    --border-input-active: none;
+    --border-flat-input: none;
+    --border-flat-input-hover: none;
+    --border-flat-input-active: none;
+
+    --radius-input: 2px;
+    --radius-flat-input: 2px;
+    
+    --height-input: 36px;
+    --padding-input: 4px 8px;
+    --min-width-input: 64px;
 }
 
 /* Extra styles */
@@ -505,8 +533,8 @@ input[type="range"]::-moz-range-thumb {
     transition: box-shadow 375ms cubic-bezier(0.61, 1, 0.88, 1);
 }
 
-button, .button, input[type=button], input[type=submit], input[type=reset], input[type="file"]::file-selector-button {
-    transition: box-shadow 375ms cubic-bezier(0.5, 1, 0.89, 1), background 375ms cubic-bezier(0.5, 1, 0.89, 1);
+button, .button, input[type=button], input[type=submit], input[type=reset], input[type="file"]::file-selector-button, input {
+    transition: box-shadow 375ms cubic-bezier(0.5, 1, 0.89, 1), background 375ms cubic-bezier(0.5, 1, 0.89, 1), color 375ms cubic-bezier(0.5, 1, 0.89, 1);
 }
 
 @keyframes check {
@@ -573,4 +601,12 @@ thead th {
     width: 100%;
     left: 0;
     top: 1em;
+}
+
+::placeholder {
+    opacity: 0.5;
+}
+
+input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat {
+    border-bottom: 2px solid var(--color-primary) !important;
 }

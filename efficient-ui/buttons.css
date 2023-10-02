@@ -7,7 +7,6 @@ button, .button, input[type=button], input[type=submit], input[type=reset], inpu
     border: var(--border-button);
     min-height: var(--height-button);
     padding: var(--padding-button);
-    margin: var(--margin-button);
     display: flex;
     width: fit-content;
     align-items: center;
