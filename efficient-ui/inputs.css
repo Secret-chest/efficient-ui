@@ -1,4 +1,4 @@
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]) {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select) {
     background: var(--color-input);
     color: var(--color-input-text);
     box-shadow: var(--shadow-input);
@@ -11,7 +11,7 @@ input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=res
     appearance: none;
 }
 
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]):focus {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select):focus {
     outline: none;  /* there is a blinking cursor, better not to have an outline */
     background: var(--color-input-active);
     color: var(--color-input-active-text);
@@ -19,26 +19,26 @@ input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=res
     border: var(--border-input-active);
 }
 
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]):hover {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select):hover {
     background: var(--color-input-hover);
     color: var(--color-input-hover-text);
     box-shadow: var(--shadow-input-hover);
     border: var(--border-input-hover);
 }
 
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]):hover::placeholder {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select):hover::placeholder {
     color: var(--color-input-hover-text);
 }
 
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]):focus::placeholder {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select):focus::placeholder {
     color: var(--color-input-focus-text);
 }
 
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color])::placeholder {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select)::placeholder {
     color: var(--color-input-text);
 }
 
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select).input-flat {
     background: var(--color-flat-input);
     color: var(--color-flat-input-text);
     box-shadow: var(--shadow-flat-input);
@@ -46,25 +46,25 @@ input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=res
     border-radius: var(--radius-flat-input);
 }
 
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat:focus {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select).input-flat:focus {
     background: var(--color-flat-input-active);
     color: var(--color-flat-input-active-text);
     box-shadow: var(--shadow-flat-input-active);
     border: var(--border-flat-input-active);
 }
 
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat:hover {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select).input-flat:hover {
     background: var(--color-flat-input-hover);
     color: var(--color-flat-input-hover-text);
     box-shadow: var(--shadow-flat-input-hover);
     border: var(--border-flat-input-hover);
 }
 
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat:hover::placeholder {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select).input-flat:hover::placeholder {
     color: var(--color-flat-input-hover-text);
 }
 
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat:focus::placeholder {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select).input-flat:focus::placeholder {
     color: var(--color-flat-input-focus-text);
 }
 
@@ -107,4 +107,10 @@ input:is([type="time"]) {
 
 input:is([type="search"]) {
     --input-icon: url("./icons/search-delete.svg");
+}
+
+select {
+    appearance: auto;
+    position: relative;
+    appearance: none;
 }

@@ -535,7 +535,7 @@ input[type="range"]::-moz-range-thumb {
     transition: box-shadow 375ms cubic-bezier(0.61, 1, 0.88, 1);
 }
 
-button, .button, input[type=button], input[type=submit], input[type=reset], input[type="file"]::file-selector-button, input {
+button, .button, input[type="file"]::file-selector-button, input, select {
     transition: box-shadow 375ms cubic-bezier(0.5, 1, 0.89, 1), background 375ms cubic-bezier(0.5, 1, 0.89, 1), color 375ms cubic-bezier(0.5, 1, 0.89, 1);
 }
 
@@ -609,7 +609,7 @@ thead th {
     opacity: 0.5;
 }
 
-input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]).input-flat {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select).input-flat {
     border-bottom: 2px solid var(--color-primary) !important;
 }
 

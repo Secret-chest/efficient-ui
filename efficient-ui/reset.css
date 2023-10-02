@@ -25,6 +25,8 @@ html {
 /* Inherit font styles for form controls */
 input, button, textarea, select {
     font: inherit;
+    letter-spacing: inherit;
+    word-spacing: inherit;
 }
 
 /* Break words to avoid horizontal scrolling */
