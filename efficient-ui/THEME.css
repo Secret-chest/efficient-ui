@@ -450,6 +450,33 @@
     --min-width-input: 64px;
 
     --size-input-icon: 16px;
+
+    /* TEXTAREAS */
+    --color-textarea: #ffffff;                        --color-textarea-text: #000000bb;
+    --color-textarea-hover: #ffffff;                  --color-textarea-hover-text: #000000bb;
+    --color-textarea-active: #ffffff;                 --color-textarea-active-text: #000000df;
+    --color-flat-textarea: transparent;                 --color-flat-textarea-text: #000000bb;
+    --color-flat-textarea-hover: transparent;           --color-flat-textarea-hover-text: #000000bb;
+    --color-flat-textarea-active: transparent;          --color-flat-textarea-active-text: #000000df;
+
+    --shadow-textarea: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
+    --shadow-textarea-hover: 0 7px 25px -10px rgba(0, 0, 0, 0.12), 0 7px 25px 0 rgba(0, 0, 0, 0.24), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    --shadow-textarea-active: 0 7px 25px -10px rgba(0, 0, 0, 0.12), 0 7px 25px 0 rgba(0, 0, 0, 0.24), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
+    --shadow-flat-textarea: none;
+    --shadow-flat-textarea-hover: none;
+    --shadow-flat-textarea-active: none;
+
+    --border-textarea: none;
+    --border-textarea-hover: none;
+    --border-textarea-active: none;
+    --border-flat-textarea: 1px solid #00000040;
+    --border-flat-textarea-hover: 1px solid #00000040;
+    --border-flat-textarea-active: 1px solid #00000040;
+
+    --radius-textarea: 2px;
+    --radius-flat-textarea: 8px;
+    
+    --padding-textarea: 8px;
 }
 
 /* Extra styles */
@@ -535,7 +562,7 @@ input[type="range"]::-moz-range-thumb {
     transition: box-shadow 375ms cubic-bezier(0.61, 1, 0.88, 1);
 }
 
-button, .button, input[type="file"]::file-selector-button, input, select {
+button, .button, input[type="file"]::file-selector-button, input, select, textarea {
     transition: box-shadow 375ms cubic-bezier(0.5, 1, 0.89, 1), background 375ms cubic-bezier(0.5, 1, 0.89, 1), color 375ms cubic-bezier(0.5, 1, 0.89, 1);
 }
 
@@ -629,4 +656,12 @@ input[type="color"]::-webkit-color-swatch {
 
 input[type="color"]::-webkit-color-swatch-wrapper {
     padding: 0;
+}
+
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select, textarea):focus {
+    outline: none;  /* there is a blinking cursor, better not to have an outline */
+}
+
+textarea {
+    font: var(--mono-font);
 }

@@ -12,7 +12,6 @@
 }
 
 :is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select):focus {
-    outline: none;  /* there is a blinking cursor, better not to have an outline */
     background: var(--color-input-active);
     color: var(--color-input-active-text);
     box-shadow: var(--shadow-input-active);

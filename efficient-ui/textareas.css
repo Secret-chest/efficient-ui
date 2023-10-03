@@ -1,0 +1,47 @@
+textarea {
+    flex: 1 0 auto;
+    resize: vertical;
+    box-shadow: var(--shadow-textarea);
+    border: var(--border-textarea);
+    background: var(--color-textarea);
+    color: var(--color-textarea-text);
+    padding: var(--padding-textarea);
+    border-radius: var(--radius-textarea);
+    width: 100%;
+}
+
+textarea:hover {
+    box-shadow: var(--shadow-textarea-hover);
+    border: var(--border-textarea-hover);
+    background: var(--color-textarea-hover);
+    color: var(--color-textarea-text-hover);
+}
+
+textarea:focus {
+    box-shadow: var(--shadow-textarea-active);
+    border: var(--border-textarea-active);
+    background: var(--color-textarea-active);
+    color: var(--color-textarea-text-active);
+}
+
+textarea.textarea-flat {
+    box-shadow: var(--shadow-flat-textarea);
+    border: var(--border-flat-textarea);
+    background: var(--color-flat-textarea);
+    color: var(--color-flat-textarea-text);
+    border-radius: var(--radius-flat-textarea);
+}
+
+textarea.textarea-flat:hover {
+    box-shadow: var(--shadow-flat-textarea-hover);
+    border: var(--border-flat-textarea-hover);
+    background: var(--color-flat-textarea-hover);
+    color: var(--color-flat-textarea-hover-text);
+}
+
+textarea.textarea-flat:active {
+    box-shadow: var(--shadow-flat-textarea-active);
+    border: var(--border-flat-textarea-active);
+    background: var(--color-flat-textarea-active);
+    color: var(--color-flat-textarea-active-text);
+}
