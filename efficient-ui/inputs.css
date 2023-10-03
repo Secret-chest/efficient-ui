@@ -1,4 +1,4 @@
-:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select) {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select) {
     background: var(--color-input);
     color: var(--color-input-text);
     box-shadow: var(--shadow-input);
@@ -11,7 +11,7 @@
     appearance: none;
 }
 
-:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select):focus {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select):focus {
     outline: none;  /* there is a blinking cursor, better not to have an outline */
     background: var(--color-input-active);
     color: var(--color-input-active-text);
@@ -19,26 +19,26 @@
     border: var(--border-input-active);
 }
 
-:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select):hover {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select):hover {
     background: var(--color-input-hover);
     color: var(--color-input-hover-text);
     box-shadow: var(--shadow-input-hover);
     border: var(--border-input-hover);
 }
 
-:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select):hover::placeholder {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select):hover::placeholder {
     color: var(--color-input-hover-text);
 }
 
-:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select):focus::placeholder {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select):focus::placeholder {
     color: var(--color-input-focus-text);
 }
 
-:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select)::placeholder {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select)::placeholder {
     color: var(--color-input-text);
 }
 
-:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select).input-flat {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select).input-flat {
     background: var(--color-flat-input);
     color: var(--color-flat-input-text);
     box-shadow: var(--shadow-flat-input);
@@ -46,25 +46,25 @@
     border-radius: var(--radius-flat-input);
 }
 
-:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select).input-flat:focus {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select).input-flat:focus {
     background: var(--color-flat-input-active);
     color: var(--color-flat-input-active-text);
     box-shadow: var(--shadow-flat-input-active);
     border: var(--border-flat-input-active);
 }
 
-:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select).input-flat:hover {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select).input-flat:hover {
     background: var(--color-flat-input-hover);
     color: var(--color-flat-input-hover-text);
     box-shadow: var(--shadow-flat-input-hover);
     border: var(--border-flat-input-hover);
 }
 
-:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select).input-flat:hover::placeholder {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select).input-flat:hover::placeholder {
     color: var(--color-flat-input-hover-text);
 }
 
-:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range], [type=color]), select).input-flat:focus::placeholder {
+:is(input:not([type=button], [type=checkbox], [type=radio], [type=submit], [type=reset], [type=file], [type=range]), select).input-flat:focus::placeholder {
     color: var(--color-flat-input-focus-text);
 }
 

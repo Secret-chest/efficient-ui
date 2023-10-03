@@ -616,3 +616,17 @@ thead th {
 :disabled {
     opacity: 0.5;
 }
+
+input[type="color"] {
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+}
+
+input[type="color"]::-webkit-color-swatch {
+    border: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
