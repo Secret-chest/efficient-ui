@@ -20,7 +20,7 @@
 
 .toolbar.vertical {
     flex-direction: column;
-    min-width: var(--height-toolbar);
+    min-width: var(--width-toolbar);
     align-items: stretch;
 }
 

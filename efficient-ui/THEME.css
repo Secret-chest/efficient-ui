@@ -485,6 +485,7 @@
     --border-toolbar: none;
     --shadow-toolbar: 0 3px 6px -4px rgba(0, 0, 0, 0.12), 0 3px 6px 0 rgba(0, 0, 0, 0.24), 0 1px 4px 0 rgba(0, 0, 0, 0.12);
     --height-toolbar: 48px;
+    --width-toolbar: fit-content;
     --radius-toolbar: 0;
     --padding-toolbar: 4px;
 }
