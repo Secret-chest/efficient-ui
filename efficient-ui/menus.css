@@ -27,3 +27,49 @@
 .toolbar.vertical * {
     width: 100%;
 }
+
+details:is(.dropdown, .slidein) > summary {
+    cursor: pointer;
+    height: fit-content;
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+details:is(.dropdown, .slidein) > summary ~ * {
+    position: absolute;
+    background: var(--color-menu);
+    color: var(--color-menu-text);
+    box-shadow: var(--shadow-menu);
+    padding: var(--padding-menu);
+    border-radius: var(--radius-menu);
+    gap: var(--gap-menu);
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+details:is(.dropdown, .slidein) > summary ~ menu > li {
+    padding: var(--padding-menu-item);
+    min-height: var(--height-menu-item);
+    border: var(--border-menu-item);
+    background: var(--color-menu-item);
+    color: var(--color-menu-item-text);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+details:is(.dropdown, .slidein) > summary ~ menu > li:hover {
+    background: var(--color-menu-item-hover);
+    color: var(--color-menu-item-hover-text);
+}
+
+details.slidein > summary ~ * {
+    left: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
