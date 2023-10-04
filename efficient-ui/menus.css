@@ -1,0 +1,24 @@
+.toolbar {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    background: var(--color-toolbar);
+    color: var(--color-toolbar-text);
+    border: var(--border-toolbar);
+    box-shadow: var(--shadow-toolbar);
+    height: var(--haight-toolbar);
+    align-items: center;
+    gap: var(--gap-toolbar);
+    padding: var(--padding-toolbar);
+    border-radius: var(--radius-toolbar);
+}
+
+.toolbar > .flexible-space {
+    flex: 1 0 auto;
+}
+
+.toolbar.vertical {
+    flex-direction: column;
+    width: fit-content;
+}

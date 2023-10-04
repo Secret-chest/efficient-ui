@@ -45,6 +45,6 @@ img {
     display: block;
 }
 
-ul, ol {
+ul, ol, menu {
     list-style: none;
 }

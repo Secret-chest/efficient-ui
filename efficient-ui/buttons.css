@@ -17,6 +17,13 @@ button, .button, input[type=button], input[type=submit], input[type=reset], inpu
     transition: var(--transitions-button);
 }
 
+iconify-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
 :is(button, .button, input[type=button], input[type=submit], input[type=reset], input[type="file"]::file-selector-button)::selection {
     /* Can select text in buttons, but selection won't appear to make it less disturbing */
     background: transparent;

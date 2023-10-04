@@ -4,6 +4,7 @@
         <title>Efficient UI - demo</title>
         <link rel="stylesheet" href="/style.css">
         <script src="/efficient-ui/toasts.js"></script>
+        <script src="https://code.iconify.design/iconify-icon/1.0.7/iconify-icon.min.js"></script>
     </head>
     <body>
         <header>
@@ -423,6 +424,47 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                         <br>
                         <textarea rows="4"></textarea>
                         <textarea class="textarea-flat" rows="4"></textarea>
+                    </section>
+                </article>
+                <article class="card">
+                    <section class="card-main" role="main">
+                        <h1>Toolbar</h1>
+                        <menu class="toolbar">
+                            <li><button><iconify-icon icon="mdi:file-plus"></iconify-icon> New</button></li>
+                            <li><button><iconify-icon icon="mdi:download"></iconify-icon></button></li>
+                            <li><button><iconify-icon icon="mdi:upload"></iconify-icon></button></li>
+                            <li><button><iconify-icon icon="mdi:undo"></iconify-icon></button></li>
+                            <li><button><iconify-icon icon="mdi:redo"></iconify-icon></button></li>
+                            <li class="flexible-space"></li>
+                            <li>Some text</li>
+                        </menu>
+                        <br>
+                        <menu class="toolbar">
+                            <li><button class="button-flat"><iconify-icon icon="mdi:file-plus"></iconify-icon> New</button></li>
+                            <li><button class="button-flat"><iconify-icon icon="mdi:download"></iconify-icon></button></li>
+                            <li><button class="button-flat"><iconify-icon icon="mdi:upload"></iconify-icon></button></li>
+                            <li><button class="button-flat"><iconify-icon icon="mdi:undo"></iconify-icon></button></li>
+                            <li><button class="button-flat"><iconify-icon icon="mdi:redo"></iconify-icon></button></li>
+                            <li class="flexible-space"></li>
+                            <li>Some text</li>
+                        </menu>
+                        <br>
+                        <x-hbox>
+                            <menu class="toolbar vertical">
+                                <li><button><iconify-icon icon="mdi:file-plus"></iconify-icon></button></li>
+                                <li><button><iconify-icon icon="mdi:download"></iconify-icon></button></li>
+                                <li><button><iconify-icon icon="mdi:upload"></iconify-icon></button></li>
+                                <li><button><iconify-icon icon="mdi:undo"></iconify-icon></button></li>
+                                <li><button><iconify-icon icon="mdi:redo"></iconify-icon></button></li>
+                            </menu>
+                            <menu class="toolbar vertical">
+                                <li><button class="button-flat"><iconify-icon icon="mdi:file-plus"></iconify-icon></button></li>
+                                <li><button class="button-flat"><iconify-icon icon="mdi:download"></iconify-icon></button></li>
+                                <li><button class="button-flat"><iconify-icon icon="mdi:upload"></iconify-icon></button></li>
+                                <li><button class="button-flat"><iconify-icon icon="mdi:undo"></iconify-icon></button></li>
+                                <li><button class="button-flat"><iconify-icon icon="mdi:redo"></iconify-icon></button></li>
+                            </menu>
+                        </x-hbox>
                     </section>
                 </article>
             </x-frame>
