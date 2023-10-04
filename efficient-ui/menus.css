@@ -7,7 +7,7 @@
     color: var(--color-toolbar-text);
     border: var(--border-toolbar);
     box-shadow: var(--shadow-toolbar);
-    height: var(--haight-toolbar);
+    min-height: var(--haight-toolbar);
     align-items: center;
     gap: var(--gap-toolbar);
     padding: var(--padding-toolbar);
@@ -20,5 +20,10 @@
 
 .toolbar.vertical {
     flex-direction: column;
-    width: fit-content;
+    min-width: var(--height-toolbar);
+    align-items: stretch;
+}
+
+.toolbar.vertical * {
+    width: 100%;
 }
