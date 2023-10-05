@@ -8,6 +8,7 @@
     overflow: hidden;  /* So rounded corners can cut through the content */
     display: flex;
     flex-flow: column nowrap;
+    height: 100%;
 }
 
 .card > section {

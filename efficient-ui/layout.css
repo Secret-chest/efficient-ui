@@ -42,6 +42,7 @@ x-frame {
     max-width: var(--width, 100%);
     width: min(var(--width), 100%);
     max-height: var(--height, 100%);
+    height: min(var(--height), 100%);
     padding: var(--padding, 0);
     margin: var(--margin, 0 auto);
     display: block;

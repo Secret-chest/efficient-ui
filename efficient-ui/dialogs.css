@@ -19,3 +19,27 @@ dialog:modal {
     align-items: center;
     justify-content: center;
 }
+
+dialog.sheet-left:modal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+}
+
+dialog.sheet-right:modal {
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+}
+
+dialog.sheet-top:modal {
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-start;
+}
+
+dialog.sheet-bottom:modal {
+    display: flex;
+    justify-content: stretch;
+    align-items: flex-end;
+}
