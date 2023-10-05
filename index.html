@@ -497,6 +497,14 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                         </menu>
                     </section>
                 </article>
+                <article class="card">
+                    <section class="card-main" role="main">
+                        <h1>Dialog</h1>
+                        <x-buttonbox>
+                            <button onclick="document.getElementById('testDialog1').showModal();">Show a modal</button>
+                        </x-buttonbox>
+                    </section>
+                </article>
             </x-frame>
             </main>
         <footer>
@@ -520,5 +528,20 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                 </x-buttonbox>
             </li>
         </ol>
+        <dialog id="testDialog1">
+            <x-frame style="--width: 576px;">
+                <div class="card">
+                    <section class="card-main" role="main">
+                        <h3>Sample Centred Dialog (default)</h3>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            <x-buttonbox>
+                            <form method="dialog">
+                                <button>Close</button>
+                            </form>
+                        </x-buttonbox>
+                    </section>
+                </div>
+            </x-frame>
+        </dialog>
     </body>
 </html>

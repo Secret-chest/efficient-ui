@@ -25,5 +25,6 @@ Link or import only this file, or use the upcoming minified version
 @import url("inputs.css");
 @import url("textareas.css");
 @import url("menus.css");
+@import url("dialogs.css");
 
 @import url("THEME.css");

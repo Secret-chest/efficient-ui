@@ -9,7 +9,7 @@ x-notebook > label:has(input[type="radio"]:checked) + x-tab {
 }
 
 x-notebook > label > input[type="radio"] {
-    display: none;
+    display: none !important;
 }
 
 x-notebook > label {
