@@ -30,6 +30,10 @@ x-buttonbox {
     gap: var(--gap-buttonbox);
 }
 
+x-buttonbox.buttonbox-right {
+    justify-content: flex-end;
+}
+
 x-buttonbox :is(button, .button, input[type="button"], input[type="submit"]) {
     margin: 0;
 }

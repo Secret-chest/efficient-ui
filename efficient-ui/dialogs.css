@@ -6,6 +6,7 @@ dialog::backdrop {
 dialog:modal {
     pointer-events: all;
     opacity: 1;
+    visibility: visible;
 }
 
 dialog:modal::backdrop {
@@ -30,6 +31,7 @@ dialog {
     justify-content: center;
     opacity: 0;
     pointer-events: none;
+    visibility: hidden;
 }
 
 dialog.sheet-left {
@@ -50,4 +52,12 @@ dialog.sheet-top {
 dialog.sheet-bottom {
     justify-content: stretch;
     align-items: flex-end;
+}
+
+dialog {
+    pointer-events: none !important;
+}
+
+dialog > * {
+    pointer-events: all;
 }

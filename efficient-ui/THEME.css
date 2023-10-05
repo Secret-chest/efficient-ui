@@ -500,7 +500,7 @@
     --padding-menu-item: 2px 8px;
 
     /* DIALOGS */
-    --color-modal-backdrop: radial-gradient(circle, #00000040 6.25%, #00000055 25%, #000000cc 100%);
+    --color-modal-backdrop: radial-gradient(circle, #00000040 12.5%, #000000cc 100%);
 }
 
 /* Extra styles */
@@ -758,7 +758,7 @@ dialog.sheet-bottom:modal {
 }
 
 dialog::backdrop {
-    backdrop-filter: saturate(0.5) contrast(0.375) brightness(1.25);
+    backdrop-filter: saturate(0.5) contrast(0.5) brightness(1.25) blur(2px);
 }
 
 @keyframes entranceX {

@@ -11,7 +11,7 @@
     height: 100%;
 }
 
-.card > section {
+.card > :is(section, header, footer) {
     padding: var(--padding-card);
 }
 
@@ -43,7 +43,7 @@ figcaption {
     max-width: var(--figure-max-size-horizontal-card);
 }
 
-.card-horizontal > figure + section {
+.card-horizontal > figure + :is(section, header, footer) {
     /* Beside figure */
     padding-top: var(--padding-card-top);
 }

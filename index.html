@@ -84,7 +84,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
 &gt;&gt;&gt;            </pre>
                     </figure>
                     <section class="card-main" role="main">
-                        <h1>Fibbonaci function in <code>python3</code></h1>
+                        <h1>Fibonacci function in <code>python3</code></h1>
                         <p>And yes, you can edit the code.</p>
                     </section>
                 </article>
@@ -506,6 +506,7 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                             <button onclick="document.getElementById('testDialog3').showModal();">Show a right sheet</button>
                             <button onclick="document.getElementById('testDialog4').showModal();">Show a top sheet</button>
                             <button onclick="document.getElementById('testDialog5').showModal();">Show a bottom sheet</button>
+                            <button onclick="document.getElementById('testDialog6').showModal();">Show a small modal</button>
                         </x-buttonbox>
                     </section>
                 </article>
@@ -538,10 +539,15 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                     <section class="card-main" role="main">
                         <h3>Sample Centred Dialog (default)</h3>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <x-buttonbox>
+                        <x-buttonbox>
                             <form method="dialog">
                                 <button>Close</button>
                             </form>
+                            <button onclick="document.getElementById('testDialog2').showModal();">Show a left sheet</button>
+                            <button onclick="document.getElementById('testDialog3').showModal();">Show a right sheet</button>
+                            <button onclick="document.getElementById('testDialog4').showModal();">Show a top sheet</button>
+                            <button onclick="document.getElementById('testDialog5').showModal();">Show a bottom sheet</button>
+                            <button onclick="document.getElementById('testDialog6').showModal();">Show a small modal</button>
                         </x-buttonbox>
                     </section>
                 </div>
@@ -553,10 +559,15 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                     <section class="card-main" role="main">
                         <h3>Sample Left Sheet Dialog</h3>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <x-buttonbox>
+                        <x-buttonbox>
                             <form method="dialog">
                                 <button>Close</button>
                             </form>
+                            <button onclick="document.getElementById('testDialog1').showModal();">Show a modal</button>
+                            <button onclick="document.getElementById('testDialog3').showModal();">Show a right sheet</button>
+                            <button onclick="document.getElementById('testDialog4').showModal();">Show a top sheet</button>
+                            <button onclick="document.getElementById('testDialog5').showModal();">Show a bottom sheet</button>
+                            <button onclick="document.getElementById('testDialog6').showModal();">Show a small modal</button>
                         </x-buttonbox>
                     </section>
                 </div>
@@ -568,10 +579,15 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                     <section class="card-main" role="main">
                         <h3>Sample Right Sheet Dialog</h3>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <x-buttonbox>
+                        <x-buttonbox>
                             <form method="dialog">
                                 <button>Close</button>
                             </form>
+                            <button onclick="document.getElementById('testDialog1').showModal();">Show a modal</button>
+                            <button onclick="document.getElementById('testDialog2').showModal();">Show a left sheet</button>
+                            <button onclick="document.getElementById('testDialog4').showModal();">Show a top sheet</button>
+                            <button onclick="document.getElementById('testDialog5').showModal();">Show a bottom sheet</button>
+                            <button onclick="document.getElementById('testDialog6').showModal();">Show a small modal</button>
                         </x-buttonbox>
                     </section>
                 </div>
@@ -583,10 +599,15 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                     <section class="card-main" role="main">
                         <h3>Sample Top Sheet Dialog</h3>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <x-buttonbox>
+                        <x-buttonbox>
                             <form method="dialog">
                                 <button>Close</button>
                             </form>
+                            <button onclick="document.getElementById('testDialog1').showModal();">Show a modal</button>
+                            <button onclick="document.getElementById('testDialog2').showModal();">Show a left sheet</button>
+                            <button onclick="document.getElementById('testDialog3').showModal();">Show a right sheet</button>
+                            <button onclick="document.getElementById('testDialog5').showModal();">Show a bottom sheet</button>
+                            <button onclick="document.getElementById('testDialog6').showModal();">Show a small modal</button>
                         </x-buttonbox>
                     </section>
                 </div>
@@ -598,14 +619,43 @@ Type &quot;help&quot;, &quot;copyright&quot;, &quot;credits&quot; or &quot;licen
                     <section class="card-main" role="main">
                         <h3>Sample Bottom Sheet Dialog</h3>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                            <x-buttonbox>
+                        <x-buttonbox>
                             <form method="dialog">
                                 <button>Close</button>
                             </form>
+                            <button onclick="document.getElementById('testDialog1').showModal();">Show a modal</button>
+                            <button onclick="document.getElementById('testDialog2').showModal();">Show a left sheet</button>
+                            <button onclick="document.getElementById('testDialog3').showModal();">Show a right sheet</button>
+                            <button onclick="document.getElementById('testDialog4').showModal();">Show a top sheet</button>
+                            <button onclick="document.getElementById('testDialog6').showModal();">Show a small modal</button>
                         </x-buttonbox>
                     </section>
                 </div>
             </x-frame>
         </dialog>
+        <dialog id="testDialog6">
+            <x-frame style="--width: 224px;">
+                <div class="card">
+                    <header>
+                        <h4>Dialog</h4>
+                    </header>
+                    <section class="card-main" role="main">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </section>
+                    <footer>
+                        <form method="dialog">
+                            <x-buttonbox class="buttonbox-right">
+                                <button class="button-flat" value="0">Cancel</button>
+                                <button class="button-flat" value="1">OK</button>
+                            </x-buttonbox>
+                        </form>
+                    </footer>
+                </div>
+            </x-frame>
+        </dialog>
     </body>
+
+    <script src="/efficient-ui/dialogs.js"></script>
 </html>
