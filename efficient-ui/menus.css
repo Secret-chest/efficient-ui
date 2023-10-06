@@ -14,7 +14,7 @@
     border-radius: var(--radius-toolbar);
 }
 
-.toolbar > .flexible-space {
+.flexible-space {
     flex: 1 0 auto;
 }
 
