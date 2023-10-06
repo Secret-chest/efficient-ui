@@ -43,7 +43,6 @@ x-buttonbox :is(button, .button, input[type="button"], input[type="submit"]) {
 }
 
 x-frame {
-    min-width: var(--width, 100%);
     max-width: var(--width, 100%);
     width: min(var(--width), 100%);
     min-height: var(--height, 100%);
