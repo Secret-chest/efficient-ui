@@ -9,6 +9,7 @@
     padding: var(--padding-navbar);
     border-radius: var(--radius-navbar);
     color: var(--color-navbar-text);
+    z-index: 1;
 }
 
 .navbar ul {
